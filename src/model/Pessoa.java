@@ -1,6 +1,9 @@
+package model;
+
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Pessoa {
+public class Pessoa implements Serializable {
 
     private String nome;
     private String cpf;

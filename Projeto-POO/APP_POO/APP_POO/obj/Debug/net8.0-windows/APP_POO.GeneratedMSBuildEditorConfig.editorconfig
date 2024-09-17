@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = APP_POO
-build_property.ProjectDir = C:\Users\Rainan\Desktop\Projeto-POO\APP_POO\APP_POO\
+build_property.ProjectDir = C:\Users\Rainan\Source\Repos\projeto-final-equipe-3-irmaos\Projeto-POO\APP_POO\APP_POO\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

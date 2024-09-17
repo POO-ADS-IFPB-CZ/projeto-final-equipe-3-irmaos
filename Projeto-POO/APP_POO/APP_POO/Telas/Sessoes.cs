@@ -1,0 +1,58 @@
+﻿using APP_POO.Funcionalidades;
+using Svg;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace APP_POO.Telas
+{
+    public partial class Sessoes : UserControl
+    {
+        private Size globalSize = new Size(35, 35);
+        public event EventHandler LoginAppClicked;
+        public event EventHandler FrutasClicked;
+
+        public Sessoes()
+        {
+            InitializeComponent();
+            RenderImg();
+        }
+        private void RenderImg()
+        {
+            //Carrega img SVG
+            SvgDocument carrinho = SvgDocument.Open(@"Icons\carrinho.svg");
+            SvgDocument fruta = SvgDocument.Open(@"Icons\fruta.svg");
+            SvgDocument legumes = SvgDocument.Open(@"Icons\legume.svg");
+            SvgDocument verdura = SvgDocument.Open(@"Icons\verdura.svg");
+
+            //Redimensiona img SVG
+            Bitmap bitmapCarrinho = Metodos.RenderSvg(carrinho, globalSize);
+            Bitmap bitmapFruta = Metodos.RenderSvg(fruta, globalSize);
+            Bitmap bitmapLegume = Metodos.RenderSvg(legumes, globalSize);
+            Bitmap bitmapVerdura = Metodos.RenderSvg(verdura, globalSize);
+
+            //Aplica img ao botão
+            Btn_Carrinho.Image = bitmapCarrinho;
+            Btn_Fruta.Image = bitmapFruta;
+            Btn_Legumes.Image = bitmapLegume;
+            Btn_Verduras.Image = bitmapVerdura;
+
+        }
+
+        private void Btn_Carrinho_DragEnter(object sender, DragEventArgs e)
+        {
+            Btn_Carrinho.ForeColor = Color.Transparent;
+        }
+
+        private void Btn_Fruta_Click(object sender, EventArgs e)
+        {
+            FrutasClicked?.Invoke(this, EventArgs.Empty);
+        }
+    }
+}

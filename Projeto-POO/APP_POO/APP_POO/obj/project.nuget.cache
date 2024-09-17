@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VwWK57pxf9Q=",
+  "dgSpecHash": "4QqyUFzOKM8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Rainan\\Desktop\\Projeto-POO\\APP_POO\\APP_POO\\APP_POO.csproj",
+  "projectFilePath": "C:\\Users\\Rainan\\Source\\Repos\\projeto-final-equipe-3-irmaos\\Projeto-POO\\APP_POO\\APP_POO\\APP_POO.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rainan\\.nuget\\packages\\excss\\4.2.3\\excss.4.2.3.nupkg.sha512",
     "C:\\Users\\Rainan\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",

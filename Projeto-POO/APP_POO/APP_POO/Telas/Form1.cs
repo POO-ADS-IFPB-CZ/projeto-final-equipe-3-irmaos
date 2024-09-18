@@ -10,6 +10,7 @@ namespace APP_POO
         private Registrar_UC registrar;
         private Sessoes sessoes;
         private Frutas_UC frutas;
+        private Legumes_UC legumes;
 
         public TelaPrincipal()
         {
@@ -22,12 +23,15 @@ namespace APP_POO
             registrar = new Registrar_UC();
             sessoes = new Sessoes();
             frutas = new Frutas_UC();
+            legumes = new Legumes_UC();
 
             login.RegisterClicked += OnRegisterClicked;
             login.LoginAppClicked += OnLoginAppClicked;
             registrar.LoginClicked += OnLoginClicked;
             sessoes.FrutasClicked += OnFrutasClicked;
+            sessoes.LegumesClicked += OnLegumesClicked;
             frutas.VoltarClicked += OnVoltarClicked;
+            legumes.VoltarClicked += OnVoltarClicked;
 
             
             Metodos.AddUserControl(login, GetPanel());
@@ -52,6 +56,10 @@ namespace APP_POO
         private void OnVoltarClicked(object sender, EventArgs e)
         {
             Metodos.AddUserControl(sessoes, GetPanel());
+        }
+        private void OnLegumesClicked(object sender, EventArgs e)
+        {
+            Metodos.AddUserControl(legumes, GetPanel());
         }
         private Panel GetPanel()
         {

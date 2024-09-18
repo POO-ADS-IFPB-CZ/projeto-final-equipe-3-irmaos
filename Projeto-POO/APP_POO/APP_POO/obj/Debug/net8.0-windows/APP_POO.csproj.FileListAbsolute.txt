@@ -77,3 +77,9 @@ C:\Users\Rainan\Source\Repos\projeto-final-equipe-3-irmaos\Projeto-POO\APP_POO\A
 C:\Users\Rainan\Source\Repos\projeto-final-equipe-3-irmaos\Projeto-POO\APP_POO\APP_POO\obj\Debug\net8.0-windows\APP_POO.pdb
 C:\Users\Rainan\Source\Repos\projeto-final-equipe-3-irmaos\Projeto-POO\APP_POO\APP_POO\obj\Debug\net8.0-windows\APP_POO.genruntimeconfig.cache
 C:\Users\Rainan\Source\Repos\projeto-final-equipe-3-irmaos\Projeto-POO\APP_POO\APP_POO\obj\Debug\net8.0-windows\ref\APP_POO.dll
+C:\Users\Rainan\Source\Repos\projeto-final-equipe-3-irmaos\Projeto-POO\APP_POO\APP_POO\obj\Debug\net8.0-windows\APP_POO.Telas.Legumes_UC.resources
+C:\Users\Rainan\Source\Repos\projeto-final-equipe-3-irmaos\Projeto-POO\APP_POO\APP_POO\bin\Debug\net8.0-windows\Icons\abobora.svg
+C:\Users\Rainan\Source\Repos\projeto-final-equipe-3-irmaos\Projeto-POO\APP_POO\APP_POO\bin\Debug\net8.0-windows\Icons\batata.svg
+C:\Users\Rainan\Source\Repos\projeto-final-equipe-3-irmaos\Projeto-POO\APP_POO\APP_POO\bin\Debug\net8.0-windows\Icons\beterraba.svg
+C:\Users\Rainan\Source\Repos\projeto-final-equipe-3-irmaos\Projeto-POO\APP_POO\APP_POO\bin\Debug\net8.0-windows\Icons\cebola.svg
+C:\Users\Rainan\Source\Repos\projeto-final-equipe-3-irmaos\Projeto-POO\APP_POO\APP_POO\bin\Debug\net8.0-windows\Icons\tomate.svg

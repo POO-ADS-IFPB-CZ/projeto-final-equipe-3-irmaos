@@ -1,0 +1,11 @@
+# Ignorar arquivos e diretórios da IDE
+.vs/
+*.vs/
+
+# Ignorar arquivos binários e de compilação
+/bin/
+/obj/
+
+# Ignorar arquivos temporários
+*.tmp
+*.log

@@ -15,16 +15,12 @@ namespace APP_POO.Telas
     public partial class Frutas_UC : UserControl
     {
         public event EventHandler VoltarClicked;
-        private Size frutasSize = new(67, 67);
+        private Size frutasSize = new(57, 57);
 
         public Frutas_UC()
         {
             InitializeComponent();
             RenderImg();
-            HorizontalScroll.Enabled = false;
-            HorizontalScroll.Visible = false;
-            VerticalScroll.Visible = false;
-            VerticalScroll.Enabled = true;
         }
 
         private void RenderImg()

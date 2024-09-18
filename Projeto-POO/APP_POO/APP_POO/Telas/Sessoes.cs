@@ -17,6 +17,7 @@ namespace APP_POO.Telas
         private Size globalSize = new Size(35, 35);
         public event EventHandler LoginAppClicked;
         public event EventHandler FrutasClicked;
+        public event EventHandler LegumesClicked;
 
         public Sessoes()
         {
@@ -53,6 +54,11 @@ namespace APP_POO.Telas
         private void Btn_Fruta_Click(object sender, EventArgs e)
         {
             FrutasClicked?.Invoke(this, EventArgs.Empty);
+        }
+
+        private void Btn_Legumes_Click(object sender, EventArgs e)
+        {
+            LegumesClicked?.Invoke(this, EventArgs.Empty);
         }
     }
 }

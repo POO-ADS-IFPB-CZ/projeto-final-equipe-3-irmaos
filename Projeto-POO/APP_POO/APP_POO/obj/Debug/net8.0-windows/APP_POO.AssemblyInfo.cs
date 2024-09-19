@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("APP_POO")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b0f010d7d4f5063518ee098428ffc3e8111d66c2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+602b7109b845cc00e7cf0c6a8d9472aafad237d1")]
 [assembly: System.Reflection.AssemblyProductAttribute("APP_POO")]
 [assembly: System.Reflection.AssemblyTitleAttribute("APP_POO")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

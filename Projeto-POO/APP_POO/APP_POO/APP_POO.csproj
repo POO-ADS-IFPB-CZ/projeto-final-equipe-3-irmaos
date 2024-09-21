@@ -58,6 +58,9 @@
     <None Update="Icons\cebola.svg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Icons\conta.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Icons\fruta.svg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

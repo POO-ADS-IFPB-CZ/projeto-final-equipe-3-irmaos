@@ -13,13 +13,11 @@ namespace APP_POO
         private Legumes_UC legumes;
         private Verduras_UC verduras;
         private Carrinho_UC carrinho;
+        private Usuario_UC usuario;
 
         public TelaPrincipal()
         {
             InitializeComponent();
-            PanelConteudo.HorizontalScroll.Enabled = false;
-            PanelConteudo.HorizontalScroll.Visible = false;
-            PanelConteudo.VerticalScroll.Visible = false;
 
             login = new Login_UC();
             registrar = new Registrar_UC();
@@ -27,7 +25,8 @@ namespace APP_POO
             frutas = new Frutas_UC();
             legumes = new Legumes_UC();
             verduras = new Verduras_UC();
-            carrinho = new Carrinho_UC();   
+            carrinho = new Carrinho_UC();  
+            usuario = new Usuario_UC();
 
             login.RegisterClicked += OnRegisterClicked;
             login.LoginAppClicked += OnLoginAppClicked;
@@ -36,10 +35,12 @@ namespace APP_POO
             sessoes.LegumesClicked += OnLegumesClicked;
             sessoes.VerdurasClicked += OnVerdurasClicked;
             sessoes.CarrinhoClicked += OnCarrinhoClicked;
+            sessoes.UsuarioClicked += OnUsuarioClicked;
             frutas.VoltarClicked += OnVoltarClicked;
             legumes.VoltarClicked += OnVoltarClicked;
             verduras.VoltarClicked +=OnVoltarClicked;
             carrinho.VoltarClicked += OnVoltarClicked;
+            usuario.VoltarClicked += OnVoltarClicked;
 
             
             Metodos.AddUserControl(login, GetPanel());
@@ -76,6 +77,10 @@ namespace APP_POO
         private void OnCarrinhoClicked(object sender, EventArgs e)
         {
             Metodos.AddUserControl(carrinho, GetPanel());
+        }
+        private void OnUsuarioClicked(object sender, EventArgs e)
+        {
+            Metodos.AddUserControl(usuario, GetPanel());
         }
         private Panel GetPanel()
         {

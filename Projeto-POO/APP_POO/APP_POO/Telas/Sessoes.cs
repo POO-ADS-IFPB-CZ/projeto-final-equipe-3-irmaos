@@ -18,6 +18,8 @@ namespace APP_POO.Telas
         public event EventHandler LoginAppClicked;
         public event EventHandler FrutasClicked;
         public event EventHandler LegumesClicked;
+        public event EventHandler VerdurasClicked;
+        public event EventHandler CarrinhoClicked;
 
         public Sessoes()
         {
@@ -59,6 +61,16 @@ namespace APP_POO.Telas
         private void Btn_Legumes_Click(object sender, EventArgs e)
         {
             LegumesClicked?.Invoke(this, EventArgs.Empty);
+        }
+
+        private void Btn_Verduras_Click(object sender, EventArgs e)
+        {
+            VerdurasClicked?.Invoke(this, EventArgs.Empty);
+        }
+
+        private void Btn_Carrinho_Click(object sender, EventArgs e)
+        {
+            CarrinhoClicked?.Invoke(this, EventArgs.Empty); 
         }
     }
 }

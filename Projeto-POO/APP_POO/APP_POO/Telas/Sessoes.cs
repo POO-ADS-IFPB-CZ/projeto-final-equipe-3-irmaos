@@ -20,6 +20,7 @@ namespace APP_POO.Telas
         public event EventHandler LegumesClicked;
         public event EventHandler VerdurasClicked;
         public event EventHandler CarrinhoClicked;
+        public event EventHandler UsuarioClicked;
 
         public Sessoes()
         {
@@ -33,19 +34,21 @@ namespace APP_POO.Telas
             SvgDocument fruta = SvgDocument.Open(@"Icons\fruta.svg");
             SvgDocument legumes = SvgDocument.Open(@"Icons\legume.svg");
             SvgDocument verdura = SvgDocument.Open(@"Icons\verdura.svg");
+            SvgDocument user = SvgDocument.Open(@"Icons\conta.svg");
 
             //Redimensiona img SVG
             Bitmap bitmapCarrinho = Metodos.RenderSvg(carrinho, globalSize);
             Bitmap bitmapFruta = Metodos.RenderSvg(fruta, globalSize);
             Bitmap bitmapLegume = Metodos.RenderSvg(legumes, globalSize);
             Bitmap bitmapVerdura = Metodos.RenderSvg(verdura, globalSize);
+            Bitmap bitmapUser = Metodos.RenderSvg(user, new Size (40, 40));
 
             //Aplica img ao botão
             Btn_Carrinho.Image = bitmapCarrinho;
             Btn_Fruta.Image = bitmapFruta;
             Btn_Legumes.Image = bitmapLegume;
             Btn_Verduras.Image = bitmapVerdura;
-
+            Btn_Usuario.Image = bitmapUser;
         }
 
         private void Btn_Carrinho_DragEnter(object sender, DragEventArgs e)
@@ -70,7 +73,12 @@ namespace APP_POO.Telas
 
         private void Btn_Carrinho_Click(object sender, EventArgs e)
         {
-            CarrinhoClicked?.Invoke(this, EventArgs.Empty); 
+            CarrinhoClicked?.Invoke(this, EventArgs.Empty);
+        }
+
+        private void Btn_Usuario_Click(object sender, EventArgs e)
+        {
+            UsuarioClicked?.Invoke(this, EventArgs.Empty);
         }
     }
 }

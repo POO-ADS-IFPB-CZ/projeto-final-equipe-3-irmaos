@@ -9,11 +9,6 @@ namespace APP_POO.Funcionalidades
 {
     public static class Metodos
     {
-        public static void CarregaPagina(Panel panel, UserControl userControl)
-        {
-            AddUserControl(userControl, panel);
-        }
-
         internal static void AddUserControl(UserControl userControl,Panel panel)
         {
             userControl.Dock = DockStyle.Fill;
@@ -29,6 +24,18 @@ namespace APP_POO.Funcionalidades
 
             Bitmap bitmap = svgDoc.Draw();
             return bitmap;
+        }
+
+        public static void Aumentar(Label label)
+        {
+            if (int.TryParse(label.Text, out int value))
+            {
+                if (value >= 0)
+                {
+                    value++;
+                    label.Text = value.ToString();
+                }
+            }
         }
     }
 }

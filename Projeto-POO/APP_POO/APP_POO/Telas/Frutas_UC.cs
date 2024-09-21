@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -70,18 +71,23 @@ namespace APP_POO.Telas
             }
         }
 
-        private void Btn_AumentarLaranja_Click(object sender, EventArgs e)
+        private void Aumentar_Click(object sender, EventArgs e)
         {
-            int.TryParse(Label_LaranjaPreco.Text, out int precoLaranja);
-            precoLaranja += 1;
-            Label_LaranjaPreco.Text = precoLaranja.ToString();
+            Button button = (Button)sender;
+            Label? label = button.Tag as Label;
+
+            if (label == null)
+            {
+                Debug.WriteLine("Label não encontrado");
+                return;
+            }
+            Debug.WriteLine($"{Label_Uva}");
+            Metodos.Aumentar(label);
         }
 
-        private void Btn_DiminuirLaranja_Click(object sender, EventArgs e)
+        private void Frutas_UC_Load(object sender, EventArgs e)
         {
-            int.TryParse(Label_LaranjaPreco.Text, out int precoLaranja);
-            precoLaranja -= 1;
-            Label_LaranjaPreco.Text = precoLaranja.ToString();
+            Btn_AumentarUva.Tag = Label_Uva;
         }
     }
 }

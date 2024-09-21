@@ -138,6 +138,7 @@
             Btn_Verduras.Size = new Size(57, 57);
             Btn_Verduras.TabIndex = 0;
             Btn_Verduras.UseVisualStyleBackColor = false;
+            Btn_Verduras.Click += Btn_Verduras_Click;
             // 
             // panel3
             // 
@@ -210,6 +211,7 @@
             Btn_Carrinho.Size = new Size(39, 34);
             Btn_Carrinho.TabIndex = 2;
             Btn_Carrinho.UseVisualStyleBackColor = false;
+            Btn_Carrinho.Click += Btn_Carrinho_Click;
             Btn_Carrinho.DragEnter += Btn_Carrinho_DragEnter;
             // 
             // Sessoes

@@ -11,6 +11,8 @@ namespace APP_POO
         private Sessoes sessoes;
         private Frutas_UC frutas;
         private Legumes_UC legumes;
+        private Verduras_UC verduras;
+        private Carrinho_UC carrinho;
 
         public TelaPrincipal()
         {
@@ -24,14 +26,20 @@ namespace APP_POO
             sessoes = new Sessoes();
             frutas = new Frutas_UC();
             legumes = new Legumes_UC();
+            verduras = new Verduras_UC();
+            carrinho = new Carrinho_UC();   
 
             login.RegisterClicked += OnRegisterClicked;
             login.LoginAppClicked += OnLoginAppClicked;
             registrar.LoginClicked += OnLoginClicked;
             sessoes.FrutasClicked += OnFrutasClicked;
             sessoes.LegumesClicked += OnLegumesClicked;
+            sessoes.VerdurasClicked += OnVerdurasClicked;
+            sessoes.CarrinhoClicked += OnCarrinhoClicked;
             frutas.VoltarClicked += OnVoltarClicked;
             legumes.VoltarClicked += OnVoltarClicked;
+            verduras.VoltarClicked +=OnVoltarClicked;
+            carrinho.VoltarClicked += OnVoltarClicked;
 
             
             Metodos.AddUserControl(login, GetPanel());
@@ -60,6 +68,14 @@ namespace APP_POO
         private void OnLegumesClicked(object sender, EventArgs e)
         {
             Metodos.AddUserControl(legumes, GetPanel());
+        }
+        private void OnVerdurasClicked(object sender, EventArgs e)
+        {
+            Metodos.AddUserControl(verduras, GetPanel());
+        }
+        private void OnCarrinhoClicked(object sender, EventArgs e)
+        {
+            Metodos.AddUserControl(carrinho, GetPanel());
         }
         private Panel GetPanel()
         {

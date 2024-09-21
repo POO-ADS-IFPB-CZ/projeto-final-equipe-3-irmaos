@@ -1,0 +1,30 @@
+﻿# Ignorar arquivos e diretórios da IDE
+.vs/
+*.vs/
+
+# Ignorar arquivos binários e de compilação
+/bin/
+/obj/
+
+# Ignorar arquivos temporários e de debug
+*.tmp
+*.log
+*.user
+*.suo
+*.ncb
+*.sdf
+*.opensdf
+*.cache
+*.dbmdl
+*.dbproj
+*.suo
+*.userosscache
+*.userprefs
+*.csproj.user
+*.pdb
+*.apk
+*.dll
+
+# Ignorar arquivos específicos
+APP_POO/bin/
+APP_POO/obj/

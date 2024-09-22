@@ -127,7 +127,7 @@
             panel7.Location = new Point(0, 0);
             panel7.Margin = new Padding(3, 2, 3, 2);
             panel7.Name = "panel7";
-            panel7.Size = new Size(394, 84);
+            panel7.Size = new Size(377, 84);
             panel7.TabIndex = 21;
             // 
             // label1
@@ -136,7 +136,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 21.7499962F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ImeMode = ImeMode.NoControl;
-            label1.Location = new Point(134, 23);
+            label1.Location = new Point(125, 23);
             label1.Name = "label1";
             label1.Size = new Size(104, 33);
             label1.TabIndex = 12;
@@ -158,7 +158,7 @@
             panel5.Dock = DockStyle.Top;
             panel5.Location = new Point(0, 176);
             panel5.Name = "panel5";
-            panel5.Size = new Size(394, 92);
+            panel5.Size = new Size(377, 92);
             panel5.TabIndex = 26;
             // 
             // Panel_Laranja
@@ -279,7 +279,7 @@
             panel6.Dock = DockStyle.Top;
             panel6.Location = new Point(0, 84);
             panel6.Name = "panel6";
-            panel6.Size = new Size(394, 92);
+            panel6.Size = new Size(377, 92);
             panel6.TabIndex = 25;
             // 
             // Panel_Uva
@@ -400,7 +400,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 360);
             panel1.Name = "panel1";
-            panel1.Size = new Size(394, 92);
+            panel1.Size = new Size(377, 92);
             panel1.TabIndex = 28;
             // 
             // Panel_Banana
@@ -445,7 +445,6 @@
             // 
             // Btn_DiminuirBanana
             // 
-            Btn_DiminuirBanana.Enabled = false;
             Btn_DiminuirBanana.Font = new Font("Microsoft Sans Serif", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Btn_DiminuirBanana.Location = new Point(325, 34);
             Btn_DiminuirBanana.Name = "Btn_DiminuirBanana";
@@ -522,7 +521,7 @@
             panel3.Dock = DockStyle.Top;
             panel3.Location = new Point(0, 268);
             panel3.Name = "panel3";
-            panel3.Size = new Size(394, 92);
+            panel3.Size = new Size(377, 92);
             panel3.TabIndex = 27;
             // 
             // Panel_Maca
@@ -643,7 +642,7 @@
             panel8.Dock = DockStyle.Top;
             panel8.Location = new Point(0, 544);
             panel8.Name = "panel8";
-            panel8.Size = new Size(394, 92);
+            panel8.Size = new Size(377, 92);
             panel8.TabIndex = 30;
             // 
             // Panel_Morango
@@ -688,7 +687,6 @@
             // 
             // Btn_DiminuirMorango
             // 
-            Btn_DiminuirMorango.Enabled = false;
             Btn_DiminuirMorango.Font = new Font("Microsoft Sans Serif", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Btn_DiminuirMorango.Location = new Point(325, 34);
             Btn_DiminuirMorango.Name = "Btn_DiminuirMorango";
@@ -765,7 +763,7 @@
             panel10.Dock = DockStyle.Top;
             panel10.Location = new Point(0, 452);
             panel10.Name = "panel10";
-            panel10.Size = new Size(394, 92);
+            panel10.Size = new Size(377, 92);
             panel10.TabIndex = 29;
             // 
             // Panel_Abacaxi
@@ -884,7 +882,7 @@
             Controls.Add(panel6);
             Controls.Add(panel7);
             Name = "Frutas_UC";
-            Size = new Size(394, 618);
+            Size = new Size(377, 618);
             Load += Frutas_UC_Load;
             panel7.ResumeLayout(false);
             panel7.PerformLayout();

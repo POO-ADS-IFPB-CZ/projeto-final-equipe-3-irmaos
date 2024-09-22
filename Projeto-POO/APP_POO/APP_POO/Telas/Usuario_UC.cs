@@ -24,7 +24,7 @@ namespace APP_POO.Telas
 
         private void RenderImg()
         {
-            Size size = new (35, 35);
+            Size size = new(35, 35);
 
             SvgDocument voltar = SvgDocument.Open(@"Icons\voltar.svg");
             Bitmap bitmap = Metodos.RenderSvg(voltar, size);
@@ -34,6 +34,21 @@ namespace APP_POO.Telas
         private void Btn_Voltar_Click(object sender, EventArgs e)
         {
             VoltarClicked?.Invoke(this, EventArgs.Empty);
+        }
+
+        private void Btn_Recarregar_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.TextBox textBox = new();
+
+            textBox.Width = 200;
+            textBox.Height = 30;
+
+            int centerX = (ClientSize.Width - textBox.Width) / 2;
+            int centerY = (ClientSize.Height - textBox.Height) / 2;
+
+            textBox.Location = new Point(centerX, centerY);
+            Controls.Add(textBox);
+            textBox.Visible = true;
         }
     }
 }

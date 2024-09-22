@@ -31,9 +31,9 @@
             panel8 = new Panel();
             Panel_AlhoPoro = new Panel();
             button7 = new Button();
-            label14 = new Label();
-            button8 = new Button();
-            button9 = new Button();
+            Label_AlhoPoro = new Label();
+            Btn_AumentarAlhoPoro = new Button();
+            Btn_DiminuirAlhoPoro = new Button();
             label15 = new Label();
             label16 = new Label();
             label17 = new Label();
@@ -42,9 +42,9 @@
             panel10 = new Panel();
             Panel_Nabo = new Panel();
             button10 = new Button();
-            label20 = new Label();
-            button11 = new Button();
-            button12 = new Button();
+            Label_Nabo = new Label();
+            Btn_AumentarNabo = new Button();
+            Btn_DiminuirNabo = new Button();
             label21 = new Label();
             label22 = new Label();
             label23 = new Label();
@@ -53,9 +53,9 @@
             panel1 = new Panel();
             Panel_Salsao = new Panel();
             button1 = new Button();
-            label2 = new Label();
-            button2 = new Button();
-            button3 = new Button();
+            Label_Salsao = new Label();
+            Btn_AumentarSalsao = new Button();
+            Btn_DiminuirSalsao = new Button();
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
@@ -64,9 +64,9 @@
             panel3 = new Panel();
             Panel_Berinjela = new Panel();
             button4 = new Button();
-            label8 = new Label();
-            button5 = new Button();
-            button6 = new Button();
+            Label_Berinjela = new Label();
+            Btn_AumentarBerinjela = new Button();
+            Btn_DiminuirBerinjela = new Button();
             label9 = new Label();
             label10 = new Label();
             label11 = new Label();
@@ -75,9 +75,9 @@
             panel5 = new Panel();
             Panel_Brocoli = new Panel();
             button16 = new Button();
-            Label_LaranjaPreco = new Label();
-            Btn_AumentarLaranja = new Button();
-            Btn_DiminuirLaranja = new Button();
+            Label_Brocolis = new Label();
+            Btn_AumentarBrocolis = new Button();
+            Btn_DiminuirBrocolis = new Button();
             label27 = new Label();
             label28 = new Label();
             label29 = new Label();
@@ -86,9 +86,9 @@
             panel6 = new Panel();
             Panel_Alface = new Panel();
             button20 = new Button();
-            label32 = new Label();
-            button21 = new Button();
-            button22 = new Button();
+            Label_Alface = new Label();
+            Btn_AumentarAlface = new Button();
+            Btn_DiminuirAlface = new Button();
             label33 = new Label();
             label34 = new Label();
             label35 = new Label();
@@ -111,9 +111,9 @@
             panel8.BackColor = Color.PaleGreen;
             panel8.Controls.Add(Panel_AlhoPoro);
             panel8.Controls.Add(button7);
-            panel8.Controls.Add(label14);
-            panel8.Controls.Add(button8);
-            panel8.Controls.Add(button9);
+            panel8.Controls.Add(Label_AlhoPoro);
+            panel8.Controls.Add(Btn_AumentarAlhoPoro);
+            panel8.Controls.Add(Btn_DiminuirAlhoPoro);
             panel8.Controls.Add(label15);
             panel8.Controls.Add(label16);
             panel8.Controls.Add(label17);
@@ -123,7 +123,7 @@
             panel8.Location = new Point(0, 727);
             panel8.Margin = new Padding(3, 4, 3, 4);
             panel8.Name = "panel8";
-            panel8.Size = new Size(516, 123);
+            panel8.Size = new Size(495, 123);
             panel8.TabIndex = 35;
             // 
             // Panel_AlhoPoro
@@ -145,38 +145,37 @@
             button7.Text = "ADD";
             button7.UseVisualStyleBackColor = true;
             // 
-            // label14
+            // Label_AlhoPoro
             // 
-            label14.AutoSize = true;
-            label14.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label14.Location = new Point(403, 49);
-            label14.Name = "label14";
-            label14.Size = new Size(21, 24);
-            label14.TabIndex = 15;
-            label14.Text = "0";
+            Label_AlhoPoro.AutoSize = true;
+            Label_AlhoPoro.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Label_AlhoPoro.Location = new Point(403, 49);
+            Label_AlhoPoro.Name = "Label_AlhoPoro";
+            Label_AlhoPoro.Size = new Size(21, 24);
+            Label_AlhoPoro.TabIndex = 15;
+            Label_AlhoPoro.Text = "0";
             // 
-            // button8
+            // Btn_AumentarAlhoPoro
             // 
-            button8.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button8.Location = new Point(431, 45);
-            button8.Margin = new Padding(3, 4, 3, 4);
-            button8.Name = "button8";
-            button8.Size = new Size(26, 31);
-            button8.TabIndex = 14;
-            button8.Text = "+";
-            button8.UseVisualStyleBackColor = true;
+            Btn_AumentarAlhoPoro.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Btn_AumentarAlhoPoro.Location = new Point(431, 45);
+            Btn_AumentarAlhoPoro.Margin = new Padding(3, 4, 3, 4);
+            Btn_AumentarAlhoPoro.Name = "Btn_AumentarAlhoPoro";
+            Btn_AumentarAlhoPoro.Size = new Size(26, 31);
+            Btn_AumentarAlhoPoro.TabIndex = 14;
+            Btn_AumentarAlhoPoro.Text = "+";
+            Btn_AumentarAlhoPoro.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // Btn_DiminuirAlhoPoro
             // 
-            button9.Enabled = false;
-            button9.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button9.Location = new Point(371, 45);
-            button9.Margin = new Padding(3, 4, 3, 4);
-            button9.Name = "button9";
-            button9.Size = new Size(26, 31);
-            button9.TabIndex = 13;
-            button9.Text = "-";
-            button9.UseVisualStyleBackColor = true;
+            Btn_DiminuirAlhoPoro.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Btn_DiminuirAlhoPoro.Location = new Point(371, 45);
+            Btn_DiminuirAlhoPoro.Margin = new Padding(3, 4, 3, 4);
+            Btn_DiminuirAlhoPoro.Name = "Btn_DiminuirAlhoPoro";
+            Btn_DiminuirAlhoPoro.Size = new Size(26, 31);
+            Btn_DiminuirAlhoPoro.TabIndex = 13;
+            Btn_DiminuirAlhoPoro.Text = "-";
+            Btn_DiminuirAlhoPoro.UseVisualStyleBackColor = true;
             // 
             // label15
             // 
@@ -233,9 +232,9 @@
             panel10.BackColor = Color.FromArgb(192, 255, 192);
             panel10.Controls.Add(Panel_Nabo);
             panel10.Controls.Add(button10);
-            panel10.Controls.Add(label20);
-            panel10.Controls.Add(button11);
-            panel10.Controls.Add(button12);
+            panel10.Controls.Add(Label_Nabo);
+            panel10.Controls.Add(Btn_AumentarNabo);
+            panel10.Controls.Add(Btn_DiminuirNabo);
             panel10.Controls.Add(label21);
             panel10.Controls.Add(label22);
             panel10.Controls.Add(label23);
@@ -245,7 +244,7 @@
             panel10.Location = new Point(0, 604);
             panel10.Margin = new Padding(3, 4, 3, 4);
             panel10.Name = "panel10";
-            panel10.Size = new Size(516, 123);
+            panel10.Size = new Size(495, 123);
             panel10.TabIndex = 34;
             // 
             // Panel_Nabo
@@ -267,37 +266,37 @@
             button10.Text = "ADD";
             button10.UseVisualStyleBackColor = true;
             // 
-            // label20
+            // Label_Nabo
             // 
-            label20.AutoSize = true;
-            label20.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label20.Location = new Point(403, 49);
-            label20.Name = "label20";
-            label20.Size = new Size(21, 24);
-            label20.TabIndex = 15;
-            label20.Text = "0";
+            Label_Nabo.AutoSize = true;
+            Label_Nabo.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Label_Nabo.Location = new Point(403, 49);
+            Label_Nabo.Name = "Label_Nabo";
+            Label_Nabo.Size = new Size(21, 24);
+            Label_Nabo.TabIndex = 15;
+            Label_Nabo.Text = "0";
             // 
-            // button11
+            // Btn_AumentarNabo
             // 
-            button11.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button11.Location = new Point(431, 45);
-            button11.Margin = new Padding(3, 4, 3, 4);
-            button11.Name = "button11";
-            button11.Size = new Size(26, 31);
-            button11.TabIndex = 14;
-            button11.Text = "+";
-            button11.UseVisualStyleBackColor = true;
+            Btn_AumentarNabo.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Btn_AumentarNabo.Location = new Point(431, 45);
+            Btn_AumentarNabo.Margin = new Padding(3, 4, 3, 4);
+            Btn_AumentarNabo.Name = "Btn_AumentarNabo";
+            Btn_AumentarNabo.Size = new Size(26, 31);
+            Btn_AumentarNabo.TabIndex = 14;
+            Btn_AumentarNabo.Text = "+";
+            Btn_AumentarNabo.UseVisualStyleBackColor = true;
             // 
-            // button12
+            // Btn_DiminuirNabo
             // 
-            button12.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button12.Location = new Point(371, 45);
-            button12.Margin = new Padding(3, 4, 3, 4);
-            button12.Name = "button12";
-            button12.Size = new Size(26, 31);
-            button12.TabIndex = 13;
-            button12.Text = "-";
-            button12.UseVisualStyleBackColor = true;
+            Btn_DiminuirNabo.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Btn_DiminuirNabo.Location = new Point(371, 45);
+            Btn_DiminuirNabo.Margin = new Padding(3, 4, 3, 4);
+            Btn_DiminuirNabo.Name = "Btn_DiminuirNabo";
+            Btn_DiminuirNabo.Size = new Size(26, 31);
+            Btn_DiminuirNabo.TabIndex = 13;
+            Btn_DiminuirNabo.Text = "-";
+            Btn_DiminuirNabo.UseVisualStyleBackColor = true;
             // 
             // label21
             // 
@@ -354,9 +353,9 @@
             panel1.BackColor = Color.PaleGreen;
             panel1.Controls.Add(Panel_Salsao);
             panel1.Controls.Add(button1);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(button2);
-            panel1.Controls.Add(button3);
+            panel1.Controls.Add(Label_Salsao);
+            panel1.Controls.Add(Btn_AumentarSalsao);
+            panel1.Controls.Add(Btn_DiminuirSalsao);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(label5);
@@ -366,7 +365,7 @@
             panel1.Location = new Point(0, 481);
             panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(516, 123);
+            panel1.Size = new Size(495, 123);
             panel1.TabIndex = 33;
             // 
             // Panel_Salsao
@@ -388,38 +387,37 @@
             button1.Text = "ADD";
             button1.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // Label_Salsao
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(403, 49);
-            label2.Name = "label2";
-            label2.Size = new Size(21, 24);
-            label2.TabIndex = 15;
-            label2.Text = "0";
+            Label_Salsao.AutoSize = true;
+            Label_Salsao.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Label_Salsao.Location = new Point(403, 49);
+            Label_Salsao.Name = "Label_Salsao";
+            Label_Salsao.Size = new Size(21, 24);
+            Label_Salsao.TabIndex = 15;
+            Label_Salsao.Text = "0";
             // 
-            // button2
+            // Btn_AumentarSalsao
             // 
-            button2.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(431, 45);
-            button2.Margin = new Padding(3, 4, 3, 4);
-            button2.Name = "button2";
-            button2.Size = new Size(26, 31);
-            button2.TabIndex = 14;
-            button2.Text = "+";
-            button2.UseVisualStyleBackColor = true;
+            Btn_AumentarSalsao.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Btn_AumentarSalsao.Location = new Point(431, 45);
+            Btn_AumentarSalsao.Margin = new Padding(3, 4, 3, 4);
+            Btn_AumentarSalsao.Name = "Btn_AumentarSalsao";
+            Btn_AumentarSalsao.Size = new Size(26, 31);
+            Btn_AumentarSalsao.TabIndex = 14;
+            Btn_AumentarSalsao.Text = "+";
+            Btn_AumentarSalsao.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // Btn_DiminuirSalsao
             // 
-            button3.Enabled = false;
-            button3.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.Location = new Point(371, 45);
-            button3.Margin = new Padding(3, 4, 3, 4);
-            button3.Name = "button3";
-            button3.Size = new Size(26, 31);
-            button3.TabIndex = 13;
-            button3.Text = "-";
-            button3.UseVisualStyleBackColor = true;
+            Btn_DiminuirSalsao.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Btn_DiminuirSalsao.Location = new Point(371, 45);
+            Btn_DiminuirSalsao.Margin = new Padding(3, 4, 3, 4);
+            Btn_DiminuirSalsao.Name = "Btn_DiminuirSalsao";
+            Btn_DiminuirSalsao.Size = new Size(26, 31);
+            Btn_DiminuirSalsao.TabIndex = 13;
+            Btn_DiminuirSalsao.Text = "-";
+            Btn_DiminuirSalsao.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -476,9 +474,9 @@
             panel3.BackColor = Color.FromArgb(192, 255, 192);
             panel3.Controls.Add(Panel_Berinjela);
             panel3.Controls.Add(button4);
-            panel3.Controls.Add(label8);
-            panel3.Controls.Add(button5);
-            panel3.Controls.Add(button6);
+            panel3.Controls.Add(Label_Berinjela);
+            panel3.Controls.Add(Btn_AumentarBerinjela);
+            panel3.Controls.Add(Btn_DiminuirBerinjela);
             panel3.Controls.Add(label9);
             panel3.Controls.Add(label10);
             panel3.Controls.Add(label11);
@@ -488,7 +486,7 @@
             panel3.Location = new Point(0, 358);
             panel3.Margin = new Padding(3, 4, 3, 4);
             panel3.Name = "panel3";
-            panel3.Size = new Size(516, 123);
+            panel3.Size = new Size(495, 123);
             panel3.TabIndex = 32;
             // 
             // Panel_Berinjela
@@ -510,37 +508,37 @@
             button4.Text = "ADD";
             button4.UseVisualStyleBackColor = true;
             // 
-            // label8
+            // Label_Berinjela
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(403, 49);
-            label8.Name = "label8";
-            label8.Size = new Size(21, 24);
-            label8.TabIndex = 15;
-            label8.Text = "0";
+            Label_Berinjela.AutoSize = true;
+            Label_Berinjela.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Label_Berinjela.Location = new Point(403, 49);
+            Label_Berinjela.Name = "Label_Berinjela";
+            Label_Berinjela.Size = new Size(21, 24);
+            Label_Berinjela.TabIndex = 15;
+            Label_Berinjela.Text = "0";
             // 
-            // button5
+            // Btn_AumentarBerinjela
             // 
-            button5.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button5.Location = new Point(431, 45);
-            button5.Margin = new Padding(3, 4, 3, 4);
-            button5.Name = "button5";
-            button5.Size = new Size(26, 31);
-            button5.TabIndex = 14;
-            button5.Text = "+";
-            button5.UseVisualStyleBackColor = true;
+            Btn_AumentarBerinjela.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Btn_AumentarBerinjela.Location = new Point(431, 45);
+            Btn_AumentarBerinjela.Margin = new Padding(3, 4, 3, 4);
+            Btn_AumentarBerinjela.Name = "Btn_AumentarBerinjela";
+            Btn_AumentarBerinjela.Size = new Size(26, 31);
+            Btn_AumentarBerinjela.TabIndex = 14;
+            Btn_AumentarBerinjela.Text = "+";
+            Btn_AumentarBerinjela.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // Btn_DiminuirBerinjela
             // 
-            button6.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button6.Location = new Point(371, 45);
-            button6.Margin = new Padding(3, 4, 3, 4);
-            button6.Name = "button6";
-            button6.Size = new Size(26, 31);
-            button6.TabIndex = 13;
-            button6.Text = "-";
-            button6.UseVisualStyleBackColor = true;
+            Btn_DiminuirBerinjela.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Btn_DiminuirBerinjela.Location = new Point(371, 45);
+            Btn_DiminuirBerinjela.Margin = new Padding(3, 4, 3, 4);
+            Btn_DiminuirBerinjela.Name = "Btn_DiminuirBerinjela";
+            Btn_DiminuirBerinjela.Size = new Size(26, 31);
+            Btn_DiminuirBerinjela.TabIndex = 13;
+            Btn_DiminuirBerinjela.Text = "-";
+            Btn_DiminuirBerinjela.UseVisualStyleBackColor = true;
             // 
             // label9
             // 
@@ -597,9 +595,9 @@
             panel5.BackColor = Color.PaleGreen;
             panel5.Controls.Add(Panel_Brocoli);
             panel5.Controls.Add(button16);
-            panel5.Controls.Add(Label_LaranjaPreco);
-            panel5.Controls.Add(Btn_AumentarLaranja);
-            panel5.Controls.Add(Btn_DiminuirLaranja);
+            panel5.Controls.Add(Label_Brocolis);
+            panel5.Controls.Add(Btn_AumentarBrocolis);
+            panel5.Controls.Add(Btn_DiminuirBrocolis);
             panel5.Controls.Add(label27);
             panel5.Controls.Add(label28);
             panel5.Controls.Add(label29);
@@ -609,7 +607,7 @@
             panel5.Location = new Point(0, 235);
             panel5.Margin = new Padding(3, 4, 3, 4);
             panel5.Name = "panel5";
-            panel5.Size = new Size(516, 123);
+            panel5.Size = new Size(495, 123);
             panel5.TabIndex = 31;
             // 
             // Panel_Brocoli
@@ -631,38 +629,37 @@
             button16.Text = "ADD";
             button16.UseVisualStyleBackColor = true;
             // 
-            // Label_LaranjaPreco
+            // Label_Brocolis
             // 
-            Label_LaranjaPreco.AutoSize = true;
-            Label_LaranjaPreco.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Label_LaranjaPreco.Location = new Point(403, 49);
-            Label_LaranjaPreco.Name = "Label_LaranjaPreco";
-            Label_LaranjaPreco.Size = new Size(21, 24);
-            Label_LaranjaPreco.TabIndex = 15;
-            Label_LaranjaPreco.Text = "0";
+            Label_Brocolis.AutoSize = true;
+            Label_Brocolis.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Label_Brocolis.Location = new Point(403, 49);
+            Label_Brocolis.Name = "Label_Brocolis";
+            Label_Brocolis.Size = new Size(21, 24);
+            Label_Brocolis.TabIndex = 15;
+            Label_Brocolis.Text = "0";
             // 
-            // Btn_AumentarLaranja
+            // Btn_AumentarBrocolis
             // 
-            Btn_AumentarLaranja.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Btn_AumentarLaranja.Location = new Point(431, 45);
-            Btn_AumentarLaranja.Margin = new Padding(3, 4, 3, 4);
-            Btn_AumentarLaranja.Name = "Btn_AumentarLaranja";
-            Btn_AumentarLaranja.Size = new Size(26, 31);
-            Btn_AumentarLaranja.TabIndex = 14;
-            Btn_AumentarLaranja.Text = "+";
-            Btn_AumentarLaranja.UseVisualStyleBackColor = true;
+            Btn_AumentarBrocolis.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Btn_AumentarBrocolis.Location = new Point(431, 45);
+            Btn_AumentarBrocolis.Margin = new Padding(3, 4, 3, 4);
+            Btn_AumentarBrocolis.Name = "Btn_AumentarBrocolis";
+            Btn_AumentarBrocolis.Size = new Size(26, 31);
+            Btn_AumentarBrocolis.TabIndex = 14;
+            Btn_AumentarBrocolis.Text = "+";
+            Btn_AumentarBrocolis.UseVisualStyleBackColor = true;
             // 
-            // Btn_DiminuirLaranja
+            // Btn_DiminuirBrocolis
             // 
-            Btn_DiminuirLaranja.Enabled = false;
-            Btn_DiminuirLaranja.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Btn_DiminuirLaranja.Location = new Point(371, 45);
-            Btn_DiminuirLaranja.Margin = new Padding(3, 4, 3, 4);
-            Btn_DiminuirLaranja.Name = "Btn_DiminuirLaranja";
-            Btn_DiminuirLaranja.Size = new Size(26, 31);
-            Btn_DiminuirLaranja.TabIndex = 13;
-            Btn_DiminuirLaranja.Text = "-";
-            Btn_DiminuirLaranja.UseVisualStyleBackColor = true;
+            Btn_DiminuirBrocolis.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Btn_DiminuirBrocolis.Location = new Point(371, 45);
+            Btn_DiminuirBrocolis.Margin = new Padding(3, 4, 3, 4);
+            Btn_DiminuirBrocolis.Name = "Btn_DiminuirBrocolis";
+            Btn_DiminuirBrocolis.Size = new Size(26, 31);
+            Btn_DiminuirBrocolis.TabIndex = 13;
+            Btn_DiminuirBrocolis.Text = "-";
+            Btn_DiminuirBrocolis.UseVisualStyleBackColor = true;
             // 
             // label27
             // 
@@ -719,9 +716,9 @@
             panel6.BackColor = Color.FromArgb(192, 255, 192);
             panel6.Controls.Add(Panel_Alface);
             panel6.Controls.Add(button20);
-            panel6.Controls.Add(label32);
-            panel6.Controls.Add(button21);
-            panel6.Controls.Add(button22);
+            panel6.Controls.Add(Label_Alface);
+            panel6.Controls.Add(Btn_AumentarAlface);
+            panel6.Controls.Add(Btn_DiminuirAlface);
             panel6.Controls.Add(label33);
             panel6.Controls.Add(label34);
             panel6.Controls.Add(label35);
@@ -731,7 +728,7 @@
             panel6.Location = new Point(0, 112);
             panel6.Margin = new Padding(3, 4, 3, 4);
             panel6.Name = "panel6";
-            panel6.Size = new Size(516, 123);
+            panel6.Size = new Size(495, 123);
             panel6.TabIndex = 30;
             // 
             // Panel_Alface
@@ -753,37 +750,37 @@
             button20.Text = "ADD";
             button20.UseVisualStyleBackColor = true;
             // 
-            // label32
+            // Label_Alface
             // 
-            label32.AutoSize = true;
-            label32.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label32.Location = new Point(403, 49);
-            label32.Name = "label32";
-            label32.Size = new Size(21, 24);
-            label32.TabIndex = 15;
-            label32.Text = "0";
+            Label_Alface.AutoSize = true;
+            Label_Alface.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Label_Alface.Location = new Point(403, 49);
+            Label_Alface.Name = "Label_Alface";
+            Label_Alface.Size = new Size(21, 24);
+            Label_Alface.TabIndex = 15;
+            Label_Alface.Text = "0";
             // 
-            // button21
+            // Btn_AumentarAlface
             // 
-            button21.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button21.Location = new Point(431, 45);
-            button21.Margin = new Padding(3, 4, 3, 4);
-            button21.Name = "button21";
-            button21.Size = new Size(26, 31);
-            button21.TabIndex = 14;
-            button21.Text = "+";
-            button21.UseVisualStyleBackColor = true;
+            Btn_AumentarAlface.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Btn_AumentarAlface.Location = new Point(431, 45);
+            Btn_AumentarAlface.Margin = new Padding(3, 4, 3, 4);
+            Btn_AumentarAlface.Name = "Btn_AumentarAlface";
+            Btn_AumentarAlface.Size = new Size(26, 31);
+            Btn_AumentarAlface.TabIndex = 14;
+            Btn_AumentarAlface.Text = "+";
+            Btn_AumentarAlface.UseVisualStyleBackColor = true;
             // 
-            // button22
+            // Btn_DiminuirAlface
             // 
-            button22.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button22.Location = new Point(371, 45);
-            button22.Margin = new Padding(3, 4, 3, 4);
-            button22.Name = "button22";
-            button22.Size = new Size(26, 31);
-            button22.TabIndex = 13;
-            button22.Text = "-";
-            button22.UseVisualStyleBackColor = true;
+            Btn_DiminuirAlface.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Btn_DiminuirAlface.Location = new Point(371, 45);
+            Btn_DiminuirAlface.Margin = new Padding(3, 4, 3, 4);
+            Btn_DiminuirAlface.Name = "Btn_DiminuirAlface";
+            Btn_DiminuirAlface.Size = new Size(26, 31);
+            Btn_DiminuirAlface.TabIndex = 13;
+            Btn_DiminuirAlface.Text = "-";
+            Btn_DiminuirAlface.UseVisualStyleBackColor = true;
             // 
             // label33
             // 
@@ -842,7 +839,7 @@
             panel7.Dock = DockStyle.Top;
             panel7.Location = new Point(0, 0);
             panel7.Name = "panel7";
-            panel7.Size = new Size(516, 112);
+            panel7.Size = new Size(495, 112);
             panel7.TabIndex = 29;
             // 
             // Btn_Voltar
@@ -865,7 +862,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Montserrat SemiBold", 21.7499962F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ImeMode = ImeMode.NoControl;
-            label1.Location = new Point(172, 31);
+            label1.Location = new Point(161, 31);
             label1.Name = "label1";
             label1.Size = new Size(191, 51);
             label1.TabIndex = 12;
@@ -885,7 +882,7 @@
             Controls.Add(panel7);
             Margin = new Padding(3, 4, 3, 4);
             Name = "Verduras_UC";
-            Size = new Size(516, 824);
+            Size = new Size(495, 824);
             panel8.ResumeLayout(false);
             panel8.PerformLayout();
             panel10.ResumeLayout(false);
@@ -908,9 +905,9 @@
         private Panel panel8;
         private Panel Panel_AlhoPoro;
         private Button button7;
-        private Label label14;
-        private Button button8;
-        private Button button9;
+        private Label Label_AlhoPoro;
+        private Button Btn_AumentarAlhoPoro;
+        private Button Btn_DiminuirAlhoPoro;
         private Label label15;
         private Label label16;
         private Label label17;
@@ -919,9 +916,9 @@
         private Panel panel10;
         private Panel Panel_Nabo;
         private Button button10;
-        private Label label20;
-        private Button button11;
-        private Button button12;
+        private Label Label_Nabo;
+        private Button Btn_AumentarNabo;
+        private Button Btn_DiminuirNabo;
         private Label label21;
         private Label label22;
         private Label label23;
@@ -930,9 +927,9 @@
         private Panel panel1;
         private Panel Panel_Salsao;
         private Button button1;
-        private Label label2;
-        private Button button2;
-        private Button button3;
+        private Label Label_Salsao;
+        private Button Btn_AumentarSalsao;
+        private Button Btn_DiminuirSalsao;
         private Label label3;
         private Label label4;
         private Label label5;
@@ -941,9 +938,9 @@
         private Panel panel3;
         private Panel Panel_Berinjela;
         private Button button4;
-        private Label label8;
-        private Button button5;
-        private Button button6;
+        private Label Label_Berinjela;
+        private Button Btn_AumentarBerinjela;
+        private Button Btn_DiminuirBerinjela;
         private Label label9;
         private Label label10;
         private Label label11;
@@ -952,9 +949,9 @@
         private Panel panel5;
         private Panel Panel_Brocoli;
         private Button button16;
-        private Label Label_LaranjaPreco;
-        private Button Btn_AumentarLaranja;
-        private Button Btn_DiminuirLaranja;
+        private Label Label_Brocolis;
+        private Button Btn_AumentarBrocolis;
+        private Button Btn_DiminuirBrocolis;
         private Label label27;
         private Label label28;
         private Label label29;
@@ -963,9 +960,9 @@
         private Panel panel6;
         private Panel Panel_Alface;
         private Button button20;
-        private Label label32;
-        private Button button21;
-        private Button button22;
+        private Label Label_Alface;
+        private Button Btn_AumentarAlface;
+        private Button Btn_DiminuirAlface;
         private Label label33;
         private Label label34;
         private Label label35;

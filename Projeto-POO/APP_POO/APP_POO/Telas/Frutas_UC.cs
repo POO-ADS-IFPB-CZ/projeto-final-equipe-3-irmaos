@@ -81,13 +81,28 @@ namespace APP_POO.Telas
                 Debug.WriteLine("Label não encontrado");
                 return;
             }
-            Debug.WriteLine($"{Label_Uva}");
             Metodos.Aumentar(label);
+        }
+
+        private void Diminuir_Click(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            Label? label = button.Tag as Label;
+
+            if(label == null)
+            {
+                return;
+            }
+            Metodos.Diminuir(label);
         }
 
         private void Frutas_UC_Load(object sender, EventArgs e)
         {
+            //Aumentar
             Btn_AumentarUva.Tag = Label_Uva;
+
+            //Diminuir
+            Btn_DiminuirUva.Tag = Label_Uva;
         }
     }
 }

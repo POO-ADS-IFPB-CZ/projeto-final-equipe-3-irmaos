@@ -127,7 +127,7 @@
             panel7.Dock = DockStyle.Top;
             panel7.Location = new Point(0, 0);
             panel7.Name = "panel7";
-            panel7.Size = new Size(530, 112);
+            panel7.Size = new Size(509, 112);
             panel7.TabIndex = 21;
             // 
             // label1
@@ -136,7 +136,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Montserrat SemiBold", 21.7499962F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ImeMode = ImeMode.NoControl;
-            label1.Location = new Point(193, 31);
+            label1.Location = new Point(182, 31);
             label1.Name = "label1";
             label1.Size = new Size(144, 51);
             label1.TabIndex = 12;
@@ -159,7 +159,7 @@
             panel5.Location = new Point(0, 235);
             panel5.Margin = new Padding(3, 4, 3, 4);
             panel5.Name = "panel5";
-            panel5.Size = new Size(530, 123);
+            panel5.Size = new Size(509, 123);
             panel5.TabIndex = 26;
             // 
             // Panel_Laranja
@@ -282,7 +282,7 @@
             panel6.Location = new Point(0, 112);
             panel6.Margin = new Padding(3, 4, 3, 4);
             panel6.Name = "panel6";
-            panel6.Size = new Size(530, 123);
+            panel6.Size = new Size(509, 123);
             panel6.TabIndex = 25;
             // 
             // Panel_Uva
@@ -337,6 +337,7 @@
             Btn_DiminuirUva.Tag = "Label_Uva";
             Btn_DiminuirUva.Text = "-";
             Btn_DiminuirUva.UseVisualStyleBackColor = true;
+            Btn_DiminuirUva.Click += Diminuir_Click;
             // 
             // label33
             // 
@@ -405,7 +406,7 @@
             panel1.Location = new Point(0, 481);
             panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(530, 123);
+            panel1.Size = new Size(509, 123);
             panel1.TabIndex = 28;
             // 
             // Panel_Banana
@@ -528,7 +529,7 @@
             panel3.Location = new Point(0, 358);
             panel3.Margin = new Padding(3, 4, 3, 4);
             panel3.Name = "panel3";
-            panel3.Size = new Size(530, 123);
+            panel3.Size = new Size(509, 123);
             panel3.TabIndex = 27;
             // 
             // Panel_Maca
@@ -650,7 +651,7 @@
             panel8.Location = new Point(0, 727);
             panel8.Margin = new Padding(3, 4, 3, 4);
             panel8.Name = "panel8";
-            panel8.Size = new Size(530, 123);
+            panel8.Size = new Size(509, 123);
             panel8.TabIndex = 30;
             // 
             // Panel_Morango
@@ -773,7 +774,7 @@
             panel10.Location = new Point(0, 604);
             panel10.Margin = new Padding(3, 4, 3, 4);
             panel10.Name = "panel10";
-            panel10.Size = new Size(530, 123);
+            panel10.Size = new Size(509, 123);
             panel10.TabIndex = 29;
             // 
             // Panel_Abacaxi
@@ -893,7 +894,7 @@
             Controls.Add(panel7);
             Margin = new Padding(3, 4, 3, 4);
             Name = "Frutas_UC";
-            Size = new Size(530, 824);
+            Size = new Size(509, 824);
             Load += Frutas_UC_Load;
             panel7.ResumeLayout(false);
             panel7.PerformLayout();

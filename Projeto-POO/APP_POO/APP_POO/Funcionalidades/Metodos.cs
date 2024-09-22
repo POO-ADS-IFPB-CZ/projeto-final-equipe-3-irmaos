@@ -37,5 +37,22 @@ namespace APP_POO.Funcionalidades
                 }
             }
         }
+
+        public static void Diminuir(Label label)
+        {
+            if (int.TryParse(label.Text, out int value))
+            {
+                if (value == 0)
+                {
+                    label.Text = value.ToString();
+                }
+                else if (value >= 0)
+                {
+                    value--;
+                    label.Text = value.ToString();
+                }
+                
+            }
+        }
     }
 }

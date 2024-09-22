@@ -100,9 +100,20 @@ namespace APP_POO.Telas
         {
             //Aumentar
             Btn_AumentarUva.Tag = Label_Uva;
+            Btn_AumentarLaranja.Tag = Label_LaranjaPreco;
+            Btn_AumentarBanana.Tag = Label_Banana;
+            Btn_AumentarAbacaxi.Tag = Label_Abacaxi;
+            Btn_AumentarMaca.Tag = Label_Maca;
+            Btn_AumentarMorango.Tag = Label_Morango;
+           
 
             //Diminuir
             Btn_DiminuirUva.Tag = Label_Uva;
+            Btn_DiminuirAbacaxi.Tag = Label_Abacaxi;
+            Btn_DiminuirBanana.Tag = Label_Banana;
+            Btn_DiminuirMaca.Tag = Label_Maca;
+            Btn_DiminuirMorango.Tag = Label_Morango;
+            Btn_DiminuirLaranja.Tag = Label_LaranjaPreco;
         }
     }
 }

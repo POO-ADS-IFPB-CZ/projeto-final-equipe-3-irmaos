@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -51,7 +52,53 @@ namespace APP_POO.Telas
 
         private void Btn_Voltar_Click(object sender, EventArgs e)
         {
-            VoltarClicked?.Invoke(this, EventArgs.Empty);   
+            VoltarClicked?.Invoke(this, EventArgs.Empty);
+
+        }
+
+        private void Aumentar_Click(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            Label? label = button.Tag as Label;
+
+            if (label == null)
+            {
+                Debug.WriteLine("Label não encontrado");
+                return;
+            }
+            Metodos.Aumentar(label);
+        }
+
+        private void Diminuir_Click(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            Label? label = button.Tag as Label;
+
+            if (label == null)
+            {
+                return;
+            }
+            Metodos.Diminuir(label);
+        }
+
+        private void Legumes_UC_Load(object sender, EventArgs e)
+        {
+            Btn_AumentarAbobora.Tag = Label_Abobora;
+            Btn_AumentarBatata.Tag = Label_Batata;
+            Btn_AumentarBeterraba.Tag = Label_Beterraba;
+            Btn_AumentarCebola.Tag = Label_Cebola;
+            Btn_AumentarCenoura.Tag = Label_Cenoura;
+            Btn_AumentarTomate.Tag = Label_Tomate;
+
+            Btn_DiminuirAbobora.Tag = Label_Abobora;
+            Btn_DiminuirBatata.Tag = Label_Batata;
+            Btn_DiminuirBeterraba.Tag = Label_Beterraba;
+            Btn_DiminuirCebola.Tag = Label_Cebola;
+            Btn_DiminuirCenoura.Tag = Label_Cenoura;
+            Btn_DiminuirTomate.Tag = Label_Tomate;
         }
     }
+
+
 }
+

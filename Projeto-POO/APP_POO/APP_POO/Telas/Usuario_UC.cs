@@ -38,10 +38,18 @@ namespace APP_POO.Telas
 
         private void Btn_Recarregar_Click(object sender, EventArgs e)
         {
-            System.Windows.Forms.TextBox textBox = new();
+            System.Windows.Forms.TextBox textBox = new()
+            {
+                Width = 200,
+                Height = 30,
+                BackColor = Color.Green,
+                ForeColor = Color.WhiteSmoke,
+                Font = new Font(DefaultFont, FontStyle.Bold),
+                MaxLength = 3
 
-            textBox.Width = 200;
-            textBox.Height = 30;
+            };
+
+            textBox.KeyPress += new KeyPressEventHandler(TextBox_KeyPress);
 
             int centerX = (ClientSize.Width - textBox.Width) / 2;
             int centerY = (ClientSize.Height - textBox.Height) / 2;
@@ -50,5 +58,13 @@ namespace APP_POO.Telas
             Controls.Add(textBox);
             textBox.Visible = true;
         }
+        private void TextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
     }
 }

@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -53,6 +54,50 @@ namespace APP_POO.Telas
         private void Btn_Voltar_Click(object sender, EventArgs e)
         {
             VoltarClicked?.Invoke(this, EventArgs.Empty);
+
         }
+        private void Aumentar_Click(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            Label? label = button.Tag as Label;
+
+            if (label == null)
+            {
+                Debug.WriteLine("Label não encontrado");
+                return;
+            }
+            Metodos.Aumentar(label);
+        }
+
+        private void Diminuir_Click(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            Label? label = button.Tag as Label;
+
+            if (label == null)
+            {
+                return;
+            }
+            Metodos.Diminuir(label);
+        }
+
+        private void Verduras_UC_Load(object sender, EventArgs e)
+        {
+            Btn_AumentarAlface.Tag = Label_Alface;
+            Btn_AumentarAlhoPoro.Tag = Label_AlhoPoro;
+            Btn_AumentarBerinjela.Tag = Label_Berinjela;
+            Btn_AumentarBrocolis.Tag = Label_Brocolis;
+            Btn_AumentarNabo.Tag = Label_Nabo;
+            Btn_AumentarSalsao.Tag = Label_Salsao;
+
+            Btn_DiminuirAlface.Tag = Label_Alface;
+            Btn_DiminuirAlhoPoro.Tag = Label_AlhoPoro;
+            Btn_DiminuirBerinjela.Tag = Label_Berinjela;
+            Btn_DiminuirBrocolis.Tag = Label_Brocolis;
+            Btn_DiminuirNabo.Tag = Label_Nabo;
+            Btn_DiminuirSalsao.Tag = Label_Salsao;
+        }
+
+       
     }
 }

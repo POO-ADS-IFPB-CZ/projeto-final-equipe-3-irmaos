@@ -28,7 +28,47 @@ namespace APP_POO.Telas
 
         private void Btn_Login_Click(object sender, EventArgs e)
         {
+            string login = TBox_Usuario_Login.Text;
+            string senha = TBox_Senha_Login.Text;
+
+            byte[] hashLogin = Metodos.GeraHash(senha);
+            string byteConvertido = Metodos.ConverteByteParaHex(hashLogin);
+
+            if (TBox_Usuario_Login.Text == "" && TBox_Senha_Login.Text == "")
+            {
+                MessageBox.Show("Você precisa informar um nome para o usuário e uma senha para prosseguir.");
+            }
+            else if (TBox_Usuario_Login.Text == "")
+            {
+                MessageBox.Show("Você precisa informar um nome para o usuário para prosseguir.");
+            }
+            else if (TBox_Senha_Login.Text == "")
+            {
+                MessageBox.Show("Você precisa informar uma senha para o usuário para prosseguir.");
+            }
+            else if (Metodos.Autenticar(login, byteConvertido))
+            {
+                MessageBox.Show("Sucesso");
+            }
+            else
+            {
+                MessageBox.Show("Erro");
+                return;
+            }
             LoginAppClicked?.Invoke(this, EventArgs.Empty);
         }
+
+        private void VerificaCampos_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(TBox_Senha_Login.Text) || string.IsNullOrEmpty(TBox_Usuario_Login.Text))
+            {
+                Btn_Login.Enabled = false;
+            }
+            else
+            {
+                Btn_Login.Enabled = true;
+            }
+        }
+
     }
 }

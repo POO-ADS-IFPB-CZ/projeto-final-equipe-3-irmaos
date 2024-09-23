@@ -75,5 +75,9 @@ namespace APP_POO.Telas
             }
         }
 
+        private void Btn_Login_Click(object sender, EventArgs e)
+        {
+            LoginClicked?.Invoke(this, EventArgs.Empty);
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Svg;
+﻿
+using Svg;
 using System;
 using System.Collections.Generic;
 using System.Security.Cryptography;
@@ -12,7 +13,7 @@ namespace APP_POO.Funcionalidades
 {
     public static class Metodos
     {
-        internal static void AddUserControl(UserControl userControl,Panel panel)
+        internal static void AddUserControl(UserControl userControl, Panel panel)
         {
             userControl.Dock = DockStyle.Fill;
             panel.Controls.Clear();
@@ -56,7 +57,7 @@ namespace APP_POO.Funcionalidades
                 }
 
 
-                
+
             }
         }
 

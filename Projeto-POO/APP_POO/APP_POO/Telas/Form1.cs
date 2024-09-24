@@ -31,6 +31,7 @@ namespace APP_POO
             login.RegisterClicked += OnRegisterClicked;
             login.LoginAppClicked += OnLoginAppClicked;
             registrar.LoginClicked += OnLoginClicked;
+            registrar.RegistroSucessoClicked += OnRegistroSucessoClicked;
             sessoes.FrutasClicked += OnFrutasClicked;
             sessoes.LegumesClicked += OnLegumesClicked;
             sessoes.VerdurasClicked += OnVerdurasClicked;
@@ -57,6 +58,12 @@ namespace APP_POO
         {
             Metodos.AddUserControl(sessoes, GetPanel());
         }
+
+        private void OnRegistroSucessoClicked(object sender, EventArgs e)
+        {
+            Metodos.AddUserControl(sessoes, GetPanel());
+        }
+
         private void OnFrutasClicked(object sender, EventArgs e)
         {
             Metodos.AddUserControl(frutas, GetPanel());

@@ -49,13 +49,13 @@ namespace APP_POO.Telas
             else if (Metodos.Autenticar(login, byteConvertido))
             {
                 MessageBox.Show("Sucesso");
+            LoginAppClicked?.Invoke(this, EventArgs.Empty);
             }
             else
             {
                 MessageBox.Show("Erro");
                 return;
             }
-            LoginAppClicked?.Invoke(this, EventArgs.Empty);
         }
 
         private void VerificaCampos_TextChanged(object sender, EventArgs e)

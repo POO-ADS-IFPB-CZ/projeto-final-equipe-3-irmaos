@@ -20,6 +20,7 @@ namespace APP_POO.Telas
         {
             InitializeComponent();
             RenderImg();
+            Imagem();
         }
 
         private void RenderImg()
@@ -64,6 +65,17 @@ namespace APP_POO.Telas
             {
                 e.Handled = true;
             }
+        }
+
+        private void Btn_EditarNome_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void Imagem()
+        {
+            SvgDocument svgDocument = SvgDocument.Open(@"Icons\edit.svg");
+            Bitmap bitmap = Metodos.RenderSvg(svgDocument, new Size(50, 50));
+            Btn_EditarNome.Image = bitmap;
         }
     }
 }

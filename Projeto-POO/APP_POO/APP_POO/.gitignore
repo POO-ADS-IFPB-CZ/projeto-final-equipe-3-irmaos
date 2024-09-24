@@ -3,7 +3,7 @@
 *.vs/
 
 # Ignorar arquivos binários e de compilação
-/bin/
+**/bin/
 /obj/
 
 # Ignorar arquivos temporários e de debug

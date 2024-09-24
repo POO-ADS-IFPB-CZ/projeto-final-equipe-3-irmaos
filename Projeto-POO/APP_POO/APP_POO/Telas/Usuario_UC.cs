@@ -15,11 +15,22 @@ namespace APP_POO.Telas
     public partial class Usuario_UC : UserControl
     {
         public event EventHandler VoltarClicked;
+        
+        private Login_UC login;
+
+        private JSON user;
 
         public Usuario_UC()
         {
             InitializeComponent();
             RenderImg();
+            login = new Login_UC();
+            login.LoginSucesso += OnLoginSucesso;
+        }
+
+        public void OnLoginSucesso(object sender, JSON dadosUsuario)
+        {
+            user = dadosUsuario;
         }
 
         private void RenderImg()
@@ -65,5 +76,26 @@ namespace APP_POO.Telas
                 e.Handled = true;
             }
         }
+
+        private void Usuario_UC_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        public void SetUser(JSON usuario)
+        {
+            user = usuario;
+            AtualizarLabels();
+        }
+        private void AtualizarLabels()
+        {
+            if (user != null)
+            {
+                Label_NomeUsuario.Text = user.Nome;
+                Label_DataCadastro.Text = DateTime.Parse(user.DataRegistro).ToString("dd/MM/yyyy");
+                Label_Saldo.Text = user.Saldo.ToString();
+            }
+        }
+
     }
 }

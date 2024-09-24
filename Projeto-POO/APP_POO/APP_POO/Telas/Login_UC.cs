@@ -15,6 +15,7 @@ namespace APP_POO.Telas
     {
         public event EventHandler RegisterClicked;
         public event EventHandler LoginAppClicked;
+        public event EventHandler<JSON> LoginSucesso;
 
         public Login_UC()
         {
@@ -49,7 +50,14 @@ namespace APP_POO.Telas
             else if (Metodos.Autenticar(login, byteConvertido))
             {
                 MessageBox.Show("Sucesso");
-            LoginAppClicked?.Invoke(this, EventArgs.Empty);
+                JSON dadoUsuarioLogado = new()
+                {
+                    Nome = login,
+                    Saldo = 0,
+                    DataRegistro = DateTime.Now.ToString("dd/MM/yyyy")
+                };
+                LoginSucesso?.Invoke(this, dadoUsuarioLogado);
+                LoginAppClicked?.Invoke(this, EventArgs.Empty);
             }
             else
             {

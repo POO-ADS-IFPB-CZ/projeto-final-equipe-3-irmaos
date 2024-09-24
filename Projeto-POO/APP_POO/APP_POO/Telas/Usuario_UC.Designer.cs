@@ -32,14 +32,14 @@
             Btn_Voltar = new Button();
             label1 = new Label();
             groupBox1 = new GroupBox();
+            Label_Saldo = new Label();
+            Label_DataCadastro = new Label();
+            Label_NomeUsuario = new Label();
             label4 = new Label();
             label3 = new Label();
             label2 = new Label();
             label5 = new Label();
             Btn_Recarregar = new Button();
-            Label_NomeUsuario = new Label();
-            Label_DataCadastro = new Label();
-            Label_Saldo = new Label();
             panel7.SuspendLayout();
             groupBox1.SuspendLayout();
             SuspendLayout();
@@ -97,6 +97,36 @@
             groupBox1.TabIndex = 24;
             groupBox1.TabStop = false;
             groupBox1.Text = "Informações";
+            // 
+            // Label_Saldo
+            // 
+            Label_Saldo.AutoSize = true;
+            Label_Saldo.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Label_Saldo.Location = new Point(87, 92);
+            Label_Saldo.Name = "Label_Saldo";
+            Label_Saldo.Size = new Size(14, 16);
+            Label_Saldo.TabIndex = 5;
+            Label_Saldo.Text = "0";
+            // 
+            // Label_DataCadastro
+            // 
+            Label_DataCadastro.AutoSize = true;
+            Label_DataCadastro.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Label_DataCadastro.Location = new Point(161, 61);
+            Label_DataCadastro.Name = "Label_DataCadastro";
+            Label_DataCadastro.Size = new Size(44, 16);
+            Label_DataCadastro.TabIndex = 4;
+            Label_DataCadastro.Text = "label6";
+            // 
+            // Label_NomeUsuario
+            // 
+            Label_NomeUsuario.AutoSize = true;
+            Label_NomeUsuario.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Label_NomeUsuario.Location = new Point(88, 31);
+            Label_NomeUsuario.Name = "Label_NomeUsuario";
+            Label_NomeUsuario.Size = new Size(44, 16);
+            Label_NomeUsuario.TabIndex = 3;
+            Label_NomeUsuario.Text = "label6";
             // 
             // label4
             // 
@@ -157,36 +187,6 @@
             Btn_Recarregar.UseVisualStyleBackColor = false;
             Btn_Recarregar.Click += Btn_Recarregar_Click;
             // 
-            // Label_NomeUsuario
-            // 
-            Label_NomeUsuario.AutoSize = true;
-            Label_NomeUsuario.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Label_NomeUsuario.Location = new Point(88, 31);
-            Label_NomeUsuario.Name = "Label_NomeUsuario";
-            Label_NomeUsuario.Size = new Size(44, 16);
-            Label_NomeUsuario.TabIndex = 3;
-            Label_NomeUsuario.Text = "label6";
-            // 
-            // Label_DataCadastro
-            // 
-            Label_DataCadastro.AutoSize = true;
-            Label_DataCadastro.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Label_DataCadastro.Location = new Point(161, 61);
-            Label_DataCadastro.Name = "Label_DataCadastro";
-            Label_DataCadastro.Size = new Size(44, 16);
-            Label_DataCadastro.TabIndex = 4;
-            Label_DataCadastro.Text = "label6";
-            // 
-            // Label_Saldo
-            // 
-            Label_Saldo.AutoSize = true;
-            Label_Saldo.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Label_Saldo.Location = new Point(87, 92);
-            Label_Saldo.Name = "Label_Saldo";
-            Label_Saldo.Size = new Size(14, 16);
-            Label_Saldo.TabIndex = 5;
-            Label_Saldo.Text = "0";
-            // 
             // Usuario_UC
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -198,6 +198,7 @@
             Margin = new Padding(3, 2, 3, 2);
             Name = "Usuario_UC";
             Size = new Size(505, 562);
+            Load += Usuario_UC_Load;
             panel7.ResumeLayout(false);
             panel7.PerformLayout();
             groupBox1.ResumeLayout(false);

@@ -37,6 +37,9 @@
             label2 = new Label();
             label5 = new Label();
             Btn_Recarregar = new Button();
+            Label_NomeUsuario = new Label();
+            Label_DataCadastro = new Label();
+            Label_Saldo = new Label();
             panel7.SuspendLayout();
             groupBox1.SuspendLayout();
             SuspendLayout();
@@ -79,6 +82,9 @@
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(Label_Saldo);
+            groupBox1.Controls.Add(Label_DataCadastro);
+            groupBox1.Controls.Add(Label_NomeUsuario);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label2);
@@ -127,7 +133,7 @@
             label5.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             label5.AutoSize = true;
             label5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(41, 338);
+            label5.Location = new Point(63, 338);
             label5.Name = "label5";
             label5.Size = new Size(379, 20);
             label5.TabIndex = 25;
@@ -142,7 +148,7 @@
             Btn_Recarregar.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold);
             Btn_Recarregar.ForeColor = Color.WhiteSmoke;
             Btn_Recarregar.ImeMode = ImeMode.NoControl;
-            Btn_Recarregar.Location = new Point(199, 390);
+            Btn_Recarregar.Location = new Point(198, 390);
             Btn_Recarregar.Margin = new Padding(3, 2, 3, 2);
             Btn_Recarregar.Name = "Btn_Recarregar";
             Btn_Recarregar.Size = new Size(108, 38);
@@ -150,6 +156,36 @@
             Btn_Recarregar.Text = "Recarregar";
             Btn_Recarregar.UseVisualStyleBackColor = false;
             Btn_Recarregar.Click += Btn_Recarregar_Click;
+            // 
+            // Label_NomeUsuario
+            // 
+            Label_NomeUsuario.AutoSize = true;
+            Label_NomeUsuario.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Label_NomeUsuario.Location = new Point(88, 31);
+            Label_NomeUsuario.Name = "Label_NomeUsuario";
+            Label_NomeUsuario.Size = new Size(44, 16);
+            Label_NomeUsuario.TabIndex = 3;
+            Label_NomeUsuario.Text = "label6";
+            // 
+            // Label_DataCadastro
+            // 
+            Label_DataCadastro.AutoSize = true;
+            Label_DataCadastro.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Label_DataCadastro.Location = new Point(161, 61);
+            Label_DataCadastro.Name = "Label_DataCadastro";
+            Label_DataCadastro.Size = new Size(44, 16);
+            Label_DataCadastro.TabIndex = 4;
+            Label_DataCadastro.Text = "label6";
+            // 
+            // Label_Saldo
+            // 
+            Label_Saldo.AutoSize = true;
+            Label_Saldo.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Label_Saldo.Location = new Point(87, 92);
+            Label_Saldo.Name = "Label_Saldo";
+            Label_Saldo.Size = new Size(14, 16);
+            Label_Saldo.TabIndex = 5;
+            Label_Saldo.Text = "0";
             // 
             // Usuario_UC
             // 
@@ -181,5 +217,8 @@
         private Label label2;
         private Label label5;
         private Button Btn_Recarregar;
+        private Label Label_Saldo;
+        private Label Label_DataCadastro;
+        private Label Label_NomeUsuario;
     }
 }

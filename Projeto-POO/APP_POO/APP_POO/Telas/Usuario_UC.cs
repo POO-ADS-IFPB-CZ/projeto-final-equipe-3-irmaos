@@ -65,6 +65,5 @@ namespace APP_POO.Telas
                 e.Handled = true;
             }
         }
-
     }
 }

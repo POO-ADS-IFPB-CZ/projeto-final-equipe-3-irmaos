@@ -16,9 +16,6 @@
     <Compile Update="Telas\Login_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="Telas\Registrar_UC.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
     <Compile Update="Telas\Sessoes.cs">
       <SubType>UserControl</SubType>
     </Compile>

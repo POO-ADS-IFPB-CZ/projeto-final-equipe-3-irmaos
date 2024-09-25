@@ -61,7 +61,7 @@ namespace APP_POO
             Login_UC login = sender as Login_UC;
             login.LoginSucesso += (s, usuario) =>
             {
-            dadosUsuarioLogado = usuario;
+                dadosUsuarioLogado = usuario;
                 Metodos.AddUserControl(sessoes, GetPanel());
             };
         }

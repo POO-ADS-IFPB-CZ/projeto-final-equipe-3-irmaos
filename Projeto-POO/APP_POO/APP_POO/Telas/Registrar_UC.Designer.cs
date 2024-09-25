@@ -61,7 +61,7 @@
             label5.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             label5.AutoSize = true;
             label5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.Location = new Point(73, 448);
+            label5.Location = new Point(105, 448);
             label5.Name = "label5";
             label5.Size = new Size(294, 20);
             label5.TabIndex = 20;
@@ -169,7 +169,7 @@
             label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(160, 69);
+            label1.Location = new Point(176, 70);
             label1.Name = "label1";
             label1.Size = new Size(168, 39);
             label1.TabIndex = 12;
@@ -192,7 +192,6 @@
             Controls.Add(label1);
             Name = "Registrar_UC";
             Size = new Size(505, 562);
-            Load += Registrar_UC_Load;
             ResumeLayout(false);
             PerformLayout();
         }

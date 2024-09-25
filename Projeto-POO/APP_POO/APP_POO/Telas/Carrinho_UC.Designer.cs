@@ -40,8 +40,9 @@
             panel7.Controls.Add(label1);
             panel7.Dock = DockStyle.Top;
             panel7.Location = new Point(0, 0);
+            panel7.Margin = new Padding(3, 2, 3, 2);
             panel7.Name = "panel7";
-            panel7.Size = new Size(429, 112);
+            panel7.Size = new Size(375, 84);
             panel7.TabIndex = 23;
             // 
             // Btn_Voltar
@@ -51,7 +52,6 @@
             Btn_Voltar.FlatStyle = FlatStyle.Flat;
             Btn_Voltar.ForeColor = Color.Transparent;
             Btn_Voltar.Location = new Point(0, 0);
-            Btn_Voltar.Margin = new Padding(3, 4, 3, 4);
             Btn_Voltar.Name = "Btn_Voltar";
             Btn_Voltar.Size = new Size(35, 35);
             Btn_Voltar.TabIndex = 14;
@@ -64,21 +64,20 @@
             label1.AutoSize = true;
             label1.Font = new Font("Montserrat SemiBold", 21.7499962F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ImeMode = ImeMode.NoControl;
-            label1.Location = new Point(130, 31);
+            label1.Location = new Point(114, 23);
             label1.Name = "label1";
-            label1.Size = new Size(188, 51);
+            label1.Size = new Size(147, 40);
             label1.TabIndex = 12;
             label1.Text = "Carrinho";
             // 
             // Carrinho_UC
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             Controls.Add(panel7);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "Carrinho_UC";
-            Size = new Size(429, 824);
+            Size = new Size(375, 618);
             panel7.ResumeLayout(false);
             panel7.PerformLayout();
             ResumeLayout(false);

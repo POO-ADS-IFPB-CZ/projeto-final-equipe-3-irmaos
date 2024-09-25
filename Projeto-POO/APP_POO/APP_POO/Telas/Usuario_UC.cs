@@ -15,7 +15,7 @@ namespace APP_POO.Telas
     public partial class Usuario_UC : UserControl
     {
         public event EventHandler VoltarClicked;
-        
+
         private Login_UC login;
 
         private JSON user;

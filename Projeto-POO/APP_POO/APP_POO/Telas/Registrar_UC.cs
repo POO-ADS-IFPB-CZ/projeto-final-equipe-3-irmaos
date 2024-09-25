@@ -1,4 +1,5 @@
 ﻿using APP_POO.Funcionalidades;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,6 +12,11 @@ using System.Windows.Forms;
 
 namespace APP_POO.Telas
 {
+    public static class UsuarioLogado
+    {
+        public static JSON Usuario { get; set; }
+    }
+
     public partial class Registrar_UC : UserControl
     {
         public event EventHandler RegistroSucessoClicked;
@@ -34,34 +40,32 @@ namespace APP_POO.Telas
             {
                 Nome = nome,
                 Senha = hashConvertido,
-                Saldo = saldo
+                Saldo = saldo,
+                DataRegistro = DateTime.Now.ToString() // Inclui a data de registro
             };
 
-            if (TBox_Usuario_Registrar.Text == "" && TBox_Senha_Registrar.Text == "")
+            if (string.IsNullOrEmpty(nome) && string.IsNullOrEmpty(senha))
             {
                 MessageBox.Show("Você precisa informar um nome para o usuário e uma senha se quiser prosseguir.");
             }
-            else if (TBox_Senha_Registrar.Text == "")
+            else if (string.IsNullOrEmpty(senha))
             {
                 MessageBox.Show("Você precisa informar uma senha se quiser prosseguir.");
             }
-            else if (TBox_Usuario_Registrar.Text == "")
+            else if (string.IsNullOrEmpty(nome))
             {
                 MessageBox.Show("Você precisa informar um nome para o usuário se quiser prosseguir.");
             }
             else
             {
                 Metodos.RegistrarUsuario(novoUsuario);
+                UsuarioLogado.Usuario = novoUsuario; // Armazena o usuário registrado
                 MessageBox.Show("Registro bem sucedido!");
 
                 RegistroSucessoClicked?.Invoke(this, EventArgs.Empty);
             }
         }
 
-        private void Registrar_UC_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void ComparaSenhas_TextChanged(object sender, EventArgs e)
         {

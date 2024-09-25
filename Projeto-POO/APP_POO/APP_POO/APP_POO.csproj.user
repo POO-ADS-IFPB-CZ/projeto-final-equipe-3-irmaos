@@ -22,9 +22,6 @@
     <Compile Update="Telas\Sessoes.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="Telas\Usuario_UC.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
     <Compile Update="Telas\Verduras_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>

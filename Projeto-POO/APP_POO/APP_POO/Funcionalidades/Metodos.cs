@@ -112,8 +112,40 @@ namespace APP_POO.Funcionalidades
             }
             return sb.ToString();
         }
+        public static List<ItemCarrinho> Carrinho { get; private set; } = new List<ItemCarrinho>();
 
+        
+        public static void AdicionarAoCarrinho(string nome, string imagem, decimal precoUnitario, int quantidade)
+        {
+            
+            var itemExistente = Carrinho.Find(item => item.Nome == nome);
+
+            if (itemExistente != null)
+            {
+                
+                itemExistente.Quantidade += quantidade;
+            }
+            else
+            {
+                
+                Carrinho.Add(new ItemCarrinho(nome, imagem, precoUnitario, quantidade));
+            }
+        }
+
+        
+        public static void RemoverDoCarrinho(string nome)
+        {
+            var itemARemover = Carrinho.Find(item => item.Nome == nome);
+            if (itemARemover != null)
+            {
+                Carrinho.Remove(itemARemover);
+            }
+        }
+
+        
+        public static void LimparCarrinho()
+        {
+            Carrinho.Clear();
+        }
     }
-
-
 }

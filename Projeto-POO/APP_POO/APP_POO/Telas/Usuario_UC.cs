@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -93,15 +94,10 @@ namespace APP_POO.Telas
         }
         private void TextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void Usuario_UC_Load(object sender, EventArgs e)
-        {
-
+            //if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            //{
+            //    e.Handled = true;
+            //}
         }
 
         public void SetUser(JSON usuario)
@@ -119,5 +115,46 @@ namespace APP_POO.Telas
             }
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.TextBox textBox = new()
+            {
+                Width = 200,
+                Height = 30,
+                BackColor = Color.Green,
+                ForeColor = Color.WhiteSmoke,
+                Font = new Font(DefaultFont, FontStyle.Bold)
+
+            };
+
+            textBox.KeyPress += new KeyPressEventHandler(TextBox_KeyPress);
+
+            int centerX = (ClientSize.Width - textBox.Width) / 2;
+            int centerY = (ClientSize.Height - textBox.Height) / 2;
+
+            textBox.Location = new Point(centerX, centerY);
+            Controls.Add(textBox);
+            textBox.Visible = true;
+            textBox.Focus();
+
+            textBox.KeyUp += (s, args) =>
+            {
+                if (args.KeyCode == Keys.Enter)
+                {
+                    textBox.Focus();
+                    var usuarioNome = textBox.Text;
+                    user.Nome = usuarioNome;
+
+                    JSON novoNome = new JSON()
+                    {
+                        Nome = user.Nome
+                    };
+                    Debug.WriteLine(user.Nome);
+
+                    MessageBox.Show("Nome atualizado com sucesso!");
+                    Controls.Remove(textBox);
+                }
+            };
+        }
     }
 }

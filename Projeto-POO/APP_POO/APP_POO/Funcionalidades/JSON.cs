@@ -12,7 +12,14 @@ namespace APP_POO.Funcionalidades
         public string? Senha { get; set; }
         public int Saldo { get; set; }
         public string? DataRegistro { get; set; }
-    }
 
+        public void SalvarJson(JSON user)
+        {
+            JSON json = new JSON
+            {
+                Nome = user.Nome,
+            };
+        }
+    }
 }
 

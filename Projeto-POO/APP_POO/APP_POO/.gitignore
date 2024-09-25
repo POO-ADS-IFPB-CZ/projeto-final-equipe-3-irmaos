@@ -28,3 +28,10 @@
 # Ignorar arquivos específicos
 APP_POO/bin/
 APP_POO/obj/
+
+# Ignorar arquivos DLL, EXE e PDB gerados
+APP_POO/bin/Debug/net8.0-windows/APP_POO.dll
+APP_POO/bin/Debug/net8.0-windows/APP_POO.exe
+APP_POO/bin/Debug/net8.0-windows/APP_POO.pdb
+APP_POO/bin/Debug/net8.0-windows/pt-BR/APP_POO.resources.dll
+

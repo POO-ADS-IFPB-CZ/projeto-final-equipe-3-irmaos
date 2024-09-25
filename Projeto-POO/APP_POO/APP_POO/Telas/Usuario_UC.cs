@@ -68,6 +68,28 @@ namespace APP_POO.Telas
             textBox.Location = new Point(centerX, centerY);
             Controls.Add(textBox);
             textBox.Visible = true;
+            textBox.Focus();
+
+            textBox.KeyUp += (s, args) =>
+            {
+                if (args.KeyCode == Keys.Enter)
+                {
+                    string saldoTxt = textBox.Text;
+
+                    if (int.TryParse(saldoTxt, out int saldo) && saldo >= 0 && saldo <= 999)
+                    {
+                        Label_Saldo.Text = saldo.ToString(); // Atualiza a label com o saldo
+                        user.Saldo = saldo;                  // Atualiza o saldo no JSON do usuário
+
+                        MessageBox.Show("Saldo atualizado com sucesso!");
+                        Controls.Remove(textBox);  // Remove a TextBox após o Enter
+                    }
+                    else
+                    {
+                        MessageBox.Show("Insira um valor válido entre 0 e 999!");
+                    }
+                }
+            };
         }
         private void TextBox_KeyPress(object sender, KeyPressEventArgs e)
         {

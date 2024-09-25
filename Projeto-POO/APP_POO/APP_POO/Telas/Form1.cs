@@ -6,6 +6,8 @@ namespace APP_POO
 {
     public partial class TelaPrincipal : Form
     {
+        private JSON dadosUsuarioLogado;
+
         private Login_UC login;
         private Registrar_UC registrar;
         private Sessoes sessoes;
@@ -25,7 +27,7 @@ namespace APP_POO
             frutas = new Frutas_UC();
             legumes = new Legumes_UC();
             verduras = new Verduras_UC();
-            carrinho = new Carrinho_UC();  
+            carrinho = new Carrinho_UC();
             usuario = new Usuario_UC();
 
             login.RegisterClicked += OnRegisterClicked;
@@ -39,11 +41,11 @@ namespace APP_POO
             sessoes.UsuarioClicked += OnUsuarioClicked;
             frutas.VoltarClicked += OnVoltarClicked;
             legumes.VoltarClicked += OnVoltarClicked;
-            verduras.VoltarClicked +=OnVoltarClicked;
+            verduras.VoltarClicked += OnVoltarClicked;
             carrinho.VoltarClicked += OnVoltarClicked;
             usuario.VoltarClicked += OnVoltarClicked;
 
-            
+
             Metodos.AddUserControl(login, GetPanel());
         }
         private void OnRegisterClicked(object sender, EventArgs e)
@@ -56,7 +58,12 @@ namespace APP_POO
         }
         private void OnLoginAppClicked(object sender, EventArgs e)
         {
-            Metodos.AddUserControl(sessoes, GetPanel());
+            Login_UC login = sender as Login_UC;
+            login.LoginSucesso += (s, usuario) =>
+            {
+                dadosUsuarioLogado = usuario;
+                Metodos.AddUserControl(sessoes, GetPanel());
+            };
         }
 
         private void OnRegistroSucessoClicked(object sender, EventArgs e)
@@ -87,6 +94,7 @@ namespace APP_POO
         }
         private void OnUsuarioClicked(object sender, EventArgs e)
         {
+            usuario.SetUser(dadosUsuarioLogado);
             Metodos.AddUserControl(usuario, GetPanel());
         }
         private Panel GetPanel()

@@ -80,7 +80,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.ImeMode = ImeMode.NoControl;
-            label5.Location = new Point(71, 412);
+            label5.Location = new Point(104, 412);
             label5.Name = "label5";
             label5.Size = new Size(296, 20);
             label5.TabIndex = 14;
@@ -148,7 +148,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 25.8000011F, FontStyle.Bold);
             label1.ImeMode = ImeMode.NoControl;
-            label1.Location = new Point(189, 69);
+            label1.Location = new Point(199, 69);
             label1.Name = "label1";
             label1.Size = new Size(106, 39);
             label1.TabIndex = 9;

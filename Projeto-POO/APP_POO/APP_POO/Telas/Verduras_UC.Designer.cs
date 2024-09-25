@@ -120,16 +120,16 @@
             panel8.Controls.Add(label18);
             panel8.Controls.Add(label19);
             panel8.Dock = DockStyle.Top;
-            panel8.Location = new Point(0, 727);
-            panel8.Margin = new Padding(3, 4, 3, 4);
+            panel8.Location = new Point(0, 544);
             panel8.Name = "panel8";
-            panel8.Size = new Size(641, 123);
+            panel8.Size = new Size(544, 92);
             panel8.TabIndex = 35;
             // 
             // Panel_AlhoPoro
             // 
             Panel_AlhoPoro.AutoSize = true;
-            Panel_AlhoPoro.Location = new Point(14, 62);
+            Panel_AlhoPoro.Location = new Point(12, 32);
+            Panel_AlhoPoro.Margin = new Padding(3, 2, 3, 2);
             Panel_AlhoPoro.Name = "Panel_AlhoPoro";
             Panel_AlhoPoro.Size = new Size(57, 57);
             Panel_AlhoPoro.TabIndex = 13;
@@ -137,10 +137,9 @@
             // button7
             // 
             button7.Font = new Font("Microsoft Sans Serif", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button7.Location = new Point(479, 33);
-            button7.Margin = new Padding(3, 4, 3, 4);
+            button7.Location = new Point(419, 25);
             button7.Name = "button7";
-            button7.Size = new Size(72, 53);
+            button7.Size = new Size(63, 40);
             button7.TabIndex = 16;
             button7.Text = "ADD";
             button7.UseVisualStyleBackColor = true;
@@ -148,20 +147,19 @@
             // Label_AlhoPoro
             // 
             Label_AlhoPoro.AutoSize = true;
-            Label_AlhoPoro.Font = new Font("Microsoft Sans Serif", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Label_AlhoPoro.Location = new Point(403, 49);
+            Label_AlhoPoro.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold);
+            Label_AlhoPoro.Location = new Point(353, 37);
             Label_AlhoPoro.Name = "Label_AlhoPoro";
-            Label_AlhoPoro.Size = new Size(19, 20);
+            Label_AlhoPoro.Size = new Size(17, 18);
             Label_AlhoPoro.TabIndex = 15;
             Label_AlhoPoro.Text = "0";
             // 
             // Btn_AumentarAlhoPoro
             // 
             Btn_AumentarAlhoPoro.Font = new Font("Microsoft Sans Serif", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Btn_AumentarAlhoPoro.Location = new Point(431, 45);
-            Btn_AumentarAlhoPoro.Margin = new Padding(3, 4, 3, 4);
+            Btn_AumentarAlhoPoro.Location = new Point(377, 34);
             Btn_AumentarAlhoPoro.Name = "Btn_AumentarAlhoPoro";
-            Btn_AumentarAlhoPoro.Size = new Size(26, 31);
+            Btn_AumentarAlhoPoro.Size = new Size(23, 23);
             Btn_AumentarAlhoPoro.TabIndex = 14;
             Btn_AumentarAlhoPoro.Text = "+";
             Btn_AumentarAlhoPoro.UseVisualStyleBackColor = true;
@@ -170,10 +168,9 @@
             // Btn_DiminuirAlhoPoro
             // 
             Btn_DiminuirAlhoPoro.Font = new Font("Microsoft Sans Serif", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Btn_DiminuirAlhoPoro.Location = new Point(371, 45);
-            Btn_DiminuirAlhoPoro.Margin = new Padding(3, 4, 3, 4);
+            Btn_DiminuirAlhoPoro.Location = new Point(325, 34);
             Btn_DiminuirAlhoPoro.Name = "Btn_DiminuirAlhoPoro";
-            Btn_DiminuirAlhoPoro.Size = new Size(26, 31);
+            Btn_DiminuirAlhoPoro.Size = new Size(23, 23);
             Btn_DiminuirAlhoPoro.TabIndex = 13;
             Btn_DiminuirAlhoPoro.Text = "-";
             Btn_DiminuirAlhoPoro.UseVisualStyleBackColor = true;
@@ -182,50 +179,50 @@
             // label15
             // 
             label15.AutoSize = true;
-            label15.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label15.Location = new Point(227, 49);
+            label15.Font = new Font("Montserrat SemiBold", 14.25F, FontStyle.Bold);
+            label15.Location = new Point(199, 37);
             label15.Name = "label15";
-            label15.Size = new Size(116, 31);
+            label15.Size = new Size(83, 26);
             label15.TabIndex = 5;
             label15.Text = "R$ 2,50";
             // 
             // label16
             // 
             label16.AutoSize = true;
-            label16.Font = new Font("Microsoft Sans Serif", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label16.Location = new Point(226, 13);
+            label16.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold);
+            label16.Location = new Point(198, 10);
             label16.Name = "label16";
-            label16.Size = new Size(117, 18);
+            label16.Size = new Size(104, 18);
             label16.TabIndex = 4;
             label16.Text = "Preço Unitário";
             // 
             // label17
             // 
             label17.AutoSize = true;
-            label17.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label17.Location = new Point(121, 49);
+            label17.Font = new Font("Montserrat SemiBold", 14.25F, FontStyle.Bold);
+            label17.Location = new Point(106, 37);
             label17.Name = "label17";
-            label17.Size = new Size(46, 31);
+            label17.Size = new Size(36, 26);
             label17.TabIndex = 3;
             label17.Text = "50";
             // 
             // label18
             // 
             label18.AutoSize = true;
-            label18.Font = new Font("Microsoft Sans Serif", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label18.Location = new Point(102, 13);
+            label18.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold);
+            label18.Location = new Point(89, 10);
             label18.Name = "label18";
-            label18.Size = new Size(93, 18);
+            label18.Size = new Size(89, 18);
             label18.TabIndex = 2;
             label18.Text = "Quantidade";
             // 
             // label19
             // 
             label19.AutoSize = true;
-            label19.Font = new Font("Microsoft Sans Serif", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label19.Location = new Point(9, 13);
+            label19.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold);
+            label19.Location = new Point(8, 10);
             label19.Name = "label19";
-            label19.Size = new Size(84, 18);
+            label19.Size = new Size(74, 18);
             label19.TabIndex = 1;
             label19.Text = "Alho-Poró";
             // 
@@ -243,16 +240,16 @@
             panel10.Controls.Add(label24);
             panel10.Controls.Add(label25);
             panel10.Dock = DockStyle.Top;
-            panel10.Location = new Point(0, 604);
-            panel10.Margin = new Padding(3, 4, 3, 4);
+            panel10.Location = new Point(0, 452);
             panel10.Name = "panel10";
-            panel10.Size = new Size(641, 123);
+            panel10.Size = new Size(544, 92);
             panel10.TabIndex = 34;
             // 
             // Panel_Nabo
             // 
             Panel_Nabo.AutoSize = true;
-            Panel_Nabo.Location = new Point(15, 62);
+            Panel_Nabo.Location = new Point(13, 32);
+            Panel_Nabo.Margin = new Padding(3, 2, 3, 2);
             Panel_Nabo.Name = "Panel_Nabo";
             Panel_Nabo.Size = new Size(57, 57);
             Panel_Nabo.TabIndex = 14;
@@ -260,10 +257,9 @@
             // button10
             // 
             button10.Font = new Font("Microsoft Sans Serif", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button10.Location = new Point(479, 33);
-            button10.Margin = new Padding(3, 4, 3, 4);
+            button10.Location = new Point(419, 25);
             button10.Name = "button10";
-            button10.Size = new Size(72, 53);
+            button10.Size = new Size(63, 40);
             button10.TabIndex = 16;
             button10.Text = "ADD";
             button10.UseVisualStyleBackColor = true;
@@ -271,20 +267,19 @@
             // Label_Nabo
             // 
             Label_Nabo.AutoSize = true;
-            Label_Nabo.Font = new Font("Microsoft Sans Serif", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Label_Nabo.Location = new Point(403, 49);
+            Label_Nabo.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold);
+            Label_Nabo.Location = new Point(353, 37);
             Label_Nabo.Name = "Label_Nabo";
-            Label_Nabo.Size = new Size(19, 20);
+            Label_Nabo.Size = new Size(17, 18);
             Label_Nabo.TabIndex = 15;
             Label_Nabo.Text = "0";
             // 
             // Btn_AumentarNabo
             // 
             Btn_AumentarNabo.Font = new Font("Microsoft Sans Serif", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Btn_AumentarNabo.Location = new Point(431, 45);
-            Btn_AumentarNabo.Margin = new Padding(3, 4, 3, 4);
+            Btn_AumentarNabo.Location = new Point(377, 34);
             Btn_AumentarNabo.Name = "Btn_AumentarNabo";
-            Btn_AumentarNabo.Size = new Size(26, 31);
+            Btn_AumentarNabo.Size = new Size(23, 23);
             Btn_AumentarNabo.TabIndex = 14;
             Btn_AumentarNabo.Text = "+";
             Btn_AumentarNabo.UseVisualStyleBackColor = true;
@@ -293,10 +288,9 @@
             // Btn_DiminuirNabo
             // 
             Btn_DiminuirNabo.Font = new Font("Microsoft Sans Serif", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Btn_DiminuirNabo.Location = new Point(371, 45);
-            Btn_DiminuirNabo.Margin = new Padding(3, 4, 3, 4);
+            Btn_DiminuirNabo.Location = new Point(325, 34);
             Btn_DiminuirNabo.Name = "Btn_DiminuirNabo";
-            Btn_DiminuirNabo.Size = new Size(26, 31);
+            Btn_DiminuirNabo.Size = new Size(23, 23);
             Btn_DiminuirNabo.TabIndex = 13;
             Btn_DiminuirNabo.Text = "-";
             Btn_DiminuirNabo.UseVisualStyleBackColor = true;
@@ -305,50 +299,50 @@
             // label21
             // 
             label21.AutoSize = true;
-            label21.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label21.Location = new Point(227, 49);
+            label21.Font = new Font("Montserrat SemiBold", 14.25F, FontStyle.Bold);
+            label21.Location = new Point(199, 37);
             label21.Name = "label21";
-            label21.Size = new Size(116, 31);
+            label21.Size = new Size(83, 26);
             label21.TabIndex = 5;
             label21.Text = "R$ 2,50";
             // 
             // label22
             // 
             label22.AutoSize = true;
-            label22.Font = new Font("Microsoft Sans Serif", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label22.Location = new Point(226, 13);
+            label22.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold);
+            label22.Location = new Point(198, 10);
             label22.Name = "label22";
-            label22.Size = new Size(117, 18);
+            label22.Size = new Size(104, 18);
             label22.TabIndex = 4;
             label22.Text = "Preço Unitário";
             // 
             // label23
             // 
             label23.AutoSize = true;
-            label23.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label23.Location = new Point(121, 49);
+            label23.Font = new Font("Montserrat SemiBold", 14.25F, FontStyle.Bold);
+            label23.Location = new Point(106, 37);
             label23.Name = "label23";
-            label23.Size = new Size(46, 31);
+            label23.Size = new Size(36, 26);
             label23.TabIndex = 3;
             label23.Text = "50";
             // 
             // label24
             // 
             label24.AutoSize = true;
-            label24.Font = new Font("Microsoft Sans Serif", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label24.Location = new Point(102, 13);
+            label24.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold);
+            label24.Location = new Point(89, 10);
             label24.Name = "label24";
-            label24.Size = new Size(93, 18);
+            label24.Size = new Size(89, 18);
             label24.TabIndex = 2;
             label24.Text = "Quantidade";
             // 
             // label25
             // 
             label25.AutoSize = true;
-            label25.Font = new Font("Microsoft Sans Serif", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label25.Location = new Point(23, 13);
+            label25.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold);
+            label25.Location = new Point(20, 10);
             label25.Name = "label25";
-            label25.Size = new Size(48, 18);
+            label25.Size = new Size(44, 18);
             label25.TabIndex = 1;
             label25.Text = "Nabo";
             // 
@@ -366,16 +360,16 @@
             panel1.Controls.Add(label6);
             panel1.Controls.Add(label7);
             panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 481);
-            panel1.Margin = new Padding(3, 4, 3, 4);
+            panel1.Location = new Point(0, 360);
             panel1.Name = "panel1";
-            panel1.Size = new Size(641, 123);
+            panel1.Size = new Size(544, 92);
             panel1.TabIndex = 33;
             // 
             // Panel_Salsao
             // 
             Panel_Salsao.AutoSize = true;
-            Panel_Salsao.Location = new Point(14, 62);
+            Panel_Salsao.Location = new Point(12, 32);
+            Panel_Salsao.Margin = new Padding(3, 2, 3, 2);
             Panel_Salsao.Name = "Panel_Salsao";
             Panel_Salsao.Size = new Size(57, 57);
             Panel_Salsao.TabIndex = 13;
@@ -383,10 +377,9 @@
             // button1
             // 
             button1.Font = new Font("Microsoft Sans Serif", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(479, 33);
-            button1.Margin = new Padding(3, 4, 3, 4);
+            button1.Location = new Point(419, 25);
             button1.Name = "button1";
-            button1.Size = new Size(72, 53);
+            button1.Size = new Size(63, 40);
             button1.TabIndex = 16;
             button1.Text = "ADD";
             button1.UseVisualStyleBackColor = true;
@@ -394,20 +387,19 @@
             // Label_Salsao
             // 
             Label_Salsao.AutoSize = true;
-            Label_Salsao.Font = new Font("Microsoft Sans Serif", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Label_Salsao.Location = new Point(403, 49);
+            Label_Salsao.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold);
+            Label_Salsao.Location = new Point(353, 37);
             Label_Salsao.Name = "Label_Salsao";
-            Label_Salsao.Size = new Size(19, 20);
+            Label_Salsao.Size = new Size(17, 18);
             Label_Salsao.TabIndex = 15;
             Label_Salsao.Text = "0";
             // 
             // Btn_AumentarSalsao
             // 
             Btn_AumentarSalsao.Font = new Font("Microsoft Sans Serif", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Btn_AumentarSalsao.Location = new Point(431, 45);
-            Btn_AumentarSalsao.Margin = new Padding(3, 4, 3, 4);
+            Btn_AumentarSalsao.Location = new Point(377, 34);
             Btn_AumentarSalsao.Name = "Btn_AumentarSalsao";
-            Btn_AumentarSalsao.Size = new Size(26, 31);
+            Btn_AumentarSalsao.Size = new Size(23, 23);
             Btn_AumentarSalsao.TabIndex = 14;
             Btn_AumentarSalsao.Text = "+";
             Btn_AumentarSalsao.UseVisualStyleBackColor = true;
@@ -416,10 +408,9 @@
             // Btn_DiminuirSalsao
             // 
             Btn_DiminuirSalsao.Font = new Font("Microsoft Sans Serif", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Btn_DiminuirSalsao.Location = new Point(371, 45);
-            Btn_DiminuirSalsao.Margin = new Padding(3, 4, 3, 4);
+            Btn_DiminuirSalsao.Location = new Point(325, 34);
             Btn_DiminuirSalsao.Name = "Btn_DiminuirSalsao";
-            Btn_DiminuirSalsao.Size = new Size(26, 31);
+            Btn_DiminuirSalsao.Size = new Size(23, 23);
             Btn_DiminuirSalsao.TabIndex = 13;
             Btn_DiminuirSalsao.Text = "-";
             Btn_DiminuirSalsao.UseVisualStyleBackColor = true;
@@ -428,50 +419,50 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(227, 49);
+            label3.Font = new Font("Montserrat SemiBold", 14.25F, FontStyle.Bold);
+            label3.Location = new Point(199, 37);
             label3.Name = "label3";
-            label3.Size = new Size(116, 31);
+            label3.Size = new Size(83, 26);
             label3.TabIndex = 5;
             label3.Text = "R$ 2,50";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Microsoft Sans Serif", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(226, 13);
+            label4.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold);
+            label4.Location = new Point(198, 10);
             label4.Name = "label4";
-            label4.Size = new Size(117, 18);
+            label4.Size = new Size(104, 18);
             label4.TabIndex = 4;
             label4.Text = "Preço Unitário";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(121, 49);
+            label5.Font = new Font("Montserrat SemiBold", 14.25F, FontStyle.Bold);
+            label5.Location = new Point(106, 37);
             label5.Name = "label5";
-            label5.Size = new Size(46, 31);
+            label5.Size = new Size(36, 26);
             label5.TabIndex = 3;
             label5.Text = "50";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Microsoft Sans Serif", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(102, 13);
+            label6.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold);
+            label6.Location = new Point(89, 10);
             label6.Name = "label6";
-            label6.Size = new Size(93, 18);
+            label6.Size = new Size(89, 18);
             label6.TabIndex = 2;
             label6.Text = "Quantidade";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Font = new Font("Microsoft Sans Serif", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.Location = new Point(16, 13);
+            label7.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold);
+            label7.Location = new Point(14, 10);
             label7.Name = "label7";
-            label7.Size = new Size(60, 18);
+            label7.Size = new Size(51, 18);
             label7.TabIndex = 1;
             label7.Text = "Salsão";
             // 
@@ -489,16 +480,16 @@
             panel3.Controls.Add(label12);
             panel3.Controls.Add(label13);
             panel3.Dock = DockStyle.Top;
-            panel3.Location = new Point(0, 358);
-            panel3.Margin = new Padding(3, 4, 3, 4);
+            panel3.Location = new Point(0, 268);
             panel3.Name = "panel3";
-            panel3.Size = new Size(641, 123);
+            panel3.Size = new Size(544, 92);
             panel3.TabIndex = 32;
             // 
             // Panel_Berinjela
             // 
             Panel_Berinjela.AutoSize = true;
-            Panel_Berinjela.Location = new Point(15, 62);
+            Panel_Berinjela.Location = new Point(13, 32);
+            Panel_Berinjela.Margin = new Padding(3, 2, 3, 2);
             Panel_Berinjela.Name = "Panel_Berinjela";
             Panel_Berinjela.Size = new Size(57, 57);
             Panel_Berinjela.TabIndex = 14;
@@ -506,10 +497,9 @@
             // button4
             // 
             button4.Font = new Font("Microsoft Sans Serif", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button4.Location = new Point(479, 33);
-            button4.Margin = new Padding(3, 4, 3, 4);
+            button4.Location = new Point(419, 25);
             button4.Name = "button4";
-            button4.Size = new Size(72, 53);
+            button4.Size = new Size(63, 40);
             button4.TabIndex = 16;
             button4.Text = "ADD";
             button4.UseVisualStyleBackColor = true;
@@ -517,20 +507,19 @@
             // Label_Berinjela
             // 
             Label_Berinjela.AutoSize = true;
-            Label_Berinjela.Font = new Font("Microsoft Sans Serif", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Label_Berinjela.Location = new Point(403, 49);
+            Label_Berinjela.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold);
+            Label_Berinjela.Location = new Point(353, 37);
             Label_Berinjela.Name = "Label_Berinjela";
-            Label_Berinjela.Size = new Size(19, 20);
+            Label_Berinjela.Size = new Size(17, 18);
             Label_Berinjela.TabIndex = 15;
             Label_Berinjela.Text = "0";
             // 
             // Btn_AumentarBerinjela
             // 
             Btn_AumentarBerinjela.Font = new Font("Microsoft Sans Serif", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Btn_AumentarBerinjela.Location = new Point(431, 45);
-            Btn_AumentarBerinjela.Margin = new Padding(3, 4, 3, 4);
+            Btn_AumentarBerinjela.Location = new Point(377, 34);
             Btn_AumentarBerinjela.Name = "Btn_AumentarBerinjela";
-            Btn_AumentarBerinjela.Size = new Size(26, 31);
+            Btn_AumentarBerinjela.Size = new Size(23, 23);
             Btn_AumentarBerinjela.TabIndex = 14;
             Btn_AumentarBerinjela.Text = "+";
             Btn_AumentarBerinjela.UseVisualStyleBackColor = true;
@@ -539,10 +528,9 @@
             // Btn_DiminuirBerinjela
             // 
             Btn_DiminuirBerinjela.Font = new Font("Microsoft Sans Serif", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Btn_DiminuirBerinjela.Location = new Point(371, 45);
-            Btn_DiminuirBerinjela.Margin = new Padding(3, 4, 3, 4);
+            Btn_DiminuirBerinjela.Location = new Point(325, 34);
             Btn_DiminuirBerinjela.Name = "Btn_DiminuirBerinjela";
-            Btn_DiminuirBerinjela.Size = new Size(26, 31);
+            Btn_DiminuirBerinjela.Size = new Size(23, 23);
             Btn_DiminuirBerinjela.TabIndex = 13;
             Btn_DiminuirBerinjela.Text = "-";
             Btn_DiminuirBerinjela.UseVisualStyleBackColor = true;
@@ -551,50 +539,50 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.Location = new Point(227, 49);
+            label9.Font = new Font("Montserrat SemiBold", 14.25F, FontStyle.Bold);
+            label9.Location = new Point(199, 37);
             label9.Name = "label9";
-            label9.Size = new Size(116, 31);
+            label9.Size = new Size(83, 26);
             label9.TabIndex = 5;
             label9.Text = "R$ 2,50";
             // 
             // label10
             // 
             label10.AutoSize = true;
-            label10.Font = new Font("Microsoft Sans Serif", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label10.Location = new Point(226, 13);
+            label10.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold);
+            label10.Location = new Point(198, 10);
             label10.Name = "label10";
-            label10.Size = new Size(117, 18);
+            label10.Size = new Size(104, 18);
             label10.TabIndex = 4;
             label10.Text = "Preço Unitário";
             // 
             // label11
             // 
             label11.AutoSize = true;
-            label11.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.Location = new Point(121, 49);
+            label11.Font = new Font("Montserrat SemiBold", 14.25F, FontStyle.Bold);
+            label11.Location = new Point(106, 37);
             label11.Name = "label11";
-            label11.Size = new Size(46, 31);
+            label11.Size = new Size(36, 26);
             label11.TabIndex = 3;
             label11.Text = "50";
             // 
             // label12
             // 
             label12.AutoSize = true;
-            label12.Font = new Font("Microsoft Sans Serif", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label12.Location = new Point(102, 13);
+            label12.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold);
+            label12.Location = new Point(89, 10);
             label12.Name = "label12";
-            label12.Size = new Size(93, 18);
+            label12.Size = new Size(89, 18);
             label12.TabIndex = 2;
             label12.Text = "Quantidade";
             // 
             // label13
             // 
             label13.AutoSize = true;
-            label13.Font = new Font("Microsoft Sans Serif", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label13.Location = new Point(14, 13);
+            label13.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold);
+            label13.Location = new Point(12, 10);
             label13.Name = "label13";
-            label13.Size = new Size(73, 18);
+            label13.Size = new Size(68, 18);
             label13.TabIndex = 1;
             label13.Text = "Berinjela";
             // 
@@ -612,16 +600,16 @@
             panel5.Controls.Add(label30);
             panel5.Controls.Add(label31);
             panel5.Dock = DockStyle.Top;
-            panel5.Location = new Point(0, 235);
-            panel5.Margin = new Padding(3, 4, 3, 4);
+            panel5.Location = new Point(0, 176);
             panel5.Name = "panel5";
-            panel5.Size = new Size(641, 123);
+            panel5.Size = new Size(544, 92);
             panel5.TabIndex = 31;
             // 
             // Panel_Brocoli
             // 
             Panel_Brocoli.AutoSize = true;
-            Panel_Brocoli.Location = new Point(14, 62);
+            Panel_Brocoli.Location = new Point(12, 32);
+            Panel_Brocoli.Margin = new Padding(3, 2, 3, 2);
             Panel_Brocoli.Name = "Panel_Brocoli";
             Panel_Brocoli.Size = new Size(57, 57);
             Panel_Brocoli.TabIndex = 13;
@@ -629,10 +617,9 @@
             // button16
             // 
             button16.Font = new Font("Microsoft Sans Serif", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button16.Location = new Point(479, 33);
-            button16.Margin = new Padding(3, 4, 3, 4);
+            button16.Location = new Point(419, 25);
             button16.Name = "button16";
-            button16.Size = new Size(72, 53);
+            button16.Size = new Size(63, 40);
             button16.TabIndex = 16;
             button16.Text = "ADD";
             button16.UseVisualStyleBackColor = true;
@@ -640,20 +627,19 @@
             // Label_Brocolis
             // 
             Label_Brocolis.AutoSize = true;
-            Label_Brocolis.Font = new Font("Microsoft Sans Serif", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Label_Brocolis.Location = new Point(403, 49);
+            Label_Brocolis.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold);
+            Label_Brocolis.Location = new Point(353, 37);
             Label_Brocolis.Name = "Label_Brocolis";
-            Label_Brocolis.Size = new Size(19, 20);
+            Label_Brocolis.Size = new Size(17, 18);
             Label_Brocolis.TabIndex = 15;
             Label_Brocolis.Text = "0";
             // 
             // Btn_AumentarBrocolis
             // 
             Btn_AumentarBrocolis.Font = new Font("Microsoft Sans Serif", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Btn_AumentarBrocolis.Location = new Point(431, 45);
-            Btn_AumentarBrocolis.Margin = new Padding(3, 4, 3, 4);
+            Btn_AumentarBrocolis.Location = new Point(377, 34);
             Btn_AumentarBrocolis.Name = "Btn_AumentarBrocolis";
-            Btn_AumentarBrocolis.Size = new Size(26, 31);
+            Btn_AumentarBrocolis.Size = new Size(23, 23);
             Btn_AumentarBrocolis.TabIndex = 14;
             Btn_AumentarBrocolis.Text = "+";
             Btn_AumentarBrocolis.UseVisualStyleBackColor = true;
@@ -662,10 +648,9 @@
             // Btn_DiminuirBrocolis
             // 
             Btn_DiminuirBrocolis.Font = new Font("Microsoft Sans Serif", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Btn_DiminuirBrocolis.Location = new Point(371, 45);
-            Btn_DiminuirBrocolis.Margin = new Padding(3, 4, 3, 4);
+            Btn_DiminuirBrocolis.Location = new Point(325, 34);
             Btn_DiminuirBrocolis.Name = "Btn_DiminuirBrocolis";
-            Btn_DiminuirBrocolis.Size = new Size(26, 31);
+            Btn_DiminuirBrocolis.Size = new Size(23, 23);
             Btn_DiminuirBrocolis.TabIndex = 13;
             Btn_DiminuirBrocolis.Text = "-";
             Btn_DiminuirBrocolis.UseVisualStyleBackColor = true;
@@ -674,50 +659,50 @@
             // label27
             // 
             label27.AutoSize = true;
-            label27.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label27.Location = new Point(227, 49);
+            label27.Font = new Font("Montserrat SemiBold", 14.25F, FontStyle.Bold);
+            label27.Location = new Point(199, 37);
             label27.Name = "label27";
-            label27.Size = new Size(116, 31);
+            label27.Size = new Size(83, 26);
             label27.TabIndex = 5;
             label27.Text = "R$ 2,50";
             // 
             // label28
             // 
             label28.AutoSize = true;
-            label28.Font = new Font("Microsoft Sans Serif", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label28.Location = new Point(226, 13);
+            label28.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold);
+            label28.Location = new Point(198, 10);
             label28.Name = "label28";
-            label28.Size = new Size(117, 18);
+            label28.Size = new Size(104, 18);
             label28.TabIndex = 4;
             label28.Text = "Preço Unitário";
             // 
             // label29
             // 
             label29.AutoSize = true;
-            label29.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label29.Location = new Point(121, 49);
+            label29.Font = new Font("Montserrat SemiBold", 14.25F, FontStyle.Bold);
+            label29.Location = new Point(106, 37);
             label29.Name = "label29";
-            label29.Size = new Size(46, 31);
+            label29.Size = new Size(36, 26);
             label29.TabIndex = 3;
             label29.Text = "50";
             // 
             // label30
             // 
             label30.AutoSize = true;
-            label30.Font = new Font("Microsoft Sans Serif", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label30.Location = new Point(102, 13);
+            label30.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold);
+            label30.Location = new Point(89, 10);
             label30.Name = "label30";
-            label30.Size = new Size(93, 18);
+            label30.Size = new Size(89, 18);
             label30.TabIndex = 2;
             label30.Text = "Quantidade";
             // 
             // label31
             // 
             label31.AutoSize = true;
-            label31.Font = new Font("Microsoft Sans Serif", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label31.Location = new Point(16, 13);
+            label31.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold);
+            label31.Location = new Point(14, 10);
             label31.Name = "label31";
-            label31.Size = new Size(71, 18);
+            label31.Size = new Size(62, 18);
             label31.TabIndex = 1;
             label31.Text = "Brócolis";
             // 
@@ -735,16 +720,16 @@
             panel6.Controls.Add(label36);
             panel6.Controls.Add(label37);
             panel6.Dock = DockStyle.Top;
-            panel6.Location = new Point(0, 112);
-            panel6.Margin = new Padding(3, 4, 3, 4);
+            panel6.Location = new Point(0, 84);
             panel6.Name = "panel6";
-            panel6.Size = new Size(641, 123);
+            panel6.Size = new Size(544, 92);
             panel6.TabIndex = 30;
             // 
             // Panel_Alface
             // 
             Panel_Alface.AutoSize = true;
-            Panel_Alface.Location = new Point(15, 62);
+            Panel_Alface.Location = new Point(13, 32);
+            Panel_Alface.Margin = new Padding(3, 2, 3, 2);
             Panel_Alface.Name = "Panel_Alface";
             Panel_Alface.Size = new Size(57, 57);
             Panel_Alface.TabIndex = 14;
@@ -752,10 +737,9 @@
             // button20
             // 
             button20.Font = new Font("Microsoft Sans Serif", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button20.Location = new Point(479, 33);
-            button20.Margin = new Padding(3, 4, 3, 4);
+            button20.Location = new Point(419, 25);
             button20.Name = "button20";
-            button20.Size = new Size(72, 53);
+            button20.Size = new Size(63, 40);
             button20.TabIndex = 16;
             button20.Text = "ADD";
             button20.UseVisualStyleBackColor = true;
@@ -763,20 +747,19 @@
             // Label_Alface
             // 
             Label_Alface.AutoSize = true;
-            Label_Alface.Font = new Font("Microsoft Sans Serif", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Label_Alface.Location = new Point(403, 49);
+            Label_Alface.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold);
+            Label_Alface.Location = new Point(353, 37);
             Label_Alface.Name = "Label_Alface";
-            Label_Alface.Size = new Size(19, 20);
+            Label_Alface.Size = new Size(17, 18);
             Label_Alface.TabIndex = 15;
             Label_Alface.Text = "0";
             // 
             // Btn_AumentarAlface
             // 
             Btn_AumentarAlface.Font = new Font("Microsoft Sans Serif", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Btn_AumentarAlface.Location = new Point(431, 45);
-            Btn_AumentarAlface.Margin = new Padding(3, 4, 3, 4);
+            Btn_AumentarAlface.Location = new Point(377, 34);
             Btn_AumentarAlface.Name = "Btn_AumentarAlface";
-            Btn_AumentarAlface.Size = new Size(26, 31);
+            Btn_AumentarAlface.Size = new Size(23, 23);
             Btn_AumentarAlface.TabIndex = 14;
             Btn_AumentarAlface.Text = "+";
             Btn_AumentarAlface.UseVisualStyleBackColor = true;
@@ -785,10 +768,9 @@
             // Btn_DiminuirAlface
             // 
             Btn_DiminuirAlface.Font = new Font("Microsoft Sans Serif", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Btn_DiminuirAlface.Location = new Point(371, 45);
-            Btn_DiminuirAlface.Margin = new Padding(3, 4, 3, 4);
+            Btn_DiminuirAlface.Location = new Point(325, 34);
             Btn_DiminuirAlface.Name = "Btn_DiminuirAlface";
-            Btn_DiminuirAlface.Size = new Size(26, 31);
+            Btn_DiminuirAlface.Size = new Size(23, 23);
             Btn_DiminuirAlface.TabIndex = 13;
             Btn_DiminuirAlface.Text = "-";
             Btn_DiminuirAlface.UseVisualStyleBackColor = true;
@@ -797,50 +779,50 @@
             // label33
             // 
             label33.AutoSize = true;
-            label33.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label33.Location = new Point(227, 49);
+            label33.Font = new Font("Montserrat SemiBold", 14.25F, FontStyle.Bold);
+            label33.Location = new Point(199, 37);
             label33.Name = "label33";
-            label33.Size = new Size(116, 31);
+            label33.Size = new Size(83, 26);
             label33.TabIndex = 5;
             label33.Text = "R$ 2,50";
             // 
             // label34
             // 
             label34.AutoSize = true;
-            label34.Font = new Font("Microsoft Sans Serif", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label34.Location = new Point(226, 13);
+            label34.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold);
+            label34.Location = new Point(198, 10);
             label34.Name = "label34";
-            label34.Size = new Size(117, 18);
+            label34.Size = new Size(104, 18);
             label34.TabIndex = 4;
             label34.Text = "Preço Unitário";
             // 
             // label35
             // 
             label35.AutoSize = true;
-            label35.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label35.Location = new Point(121, 49);
+            label35.Font = new Font("Montserrat SemiBold", 14.25F, FontStyle.Bold);
+            label35.Location = new Point(106, 37);
             label35.Name = "label35";
-            label35.Size = new Size(46, 31);
+            label35.Size = new Size(36, 26);
             label35.TabIndex = 3;
             label35.Text = "50";
             // 
             // label36
             // 
             label36.AutoSize = true;
-            label36.Font = new Font("Microsoft Sans Serif", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label36.Location = new Point(102, 13);
+            label36.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold);
+            label36.Location = new Point(89, 10);
             label36.Name = "label36";
-            label36.Size = new Size(93, 18);
+            label36.Size = new Size(89, 18);
             label36.TabIndex = 2;
             label36.Text = "Quantidade";
             // 
             // label37
             // 
             label37.AutoSize = true;
-            label37.Font = new Font("Microsoft Sans Serif", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label37.Location = new Point(22, 13);
+            label37.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold);
+            label37.Location = new Point(19, 10);
             label37.Name = "label37";
-            label37.Size = new Size(54, 18);
+            label37.Size = new Size(51, 18);
             label37.TabIndex = 1;
             label37.Text = "Alface";
             // 
@@ -850,8 +832,9 @@
             panel7.Controls.Add(label1);
             panel7.Dock = DockStyle.Top;
             panel7.Location = new Point(0, 0);
+            panel7.Margin = new Padding(3, 2, 3, 2);
             panel7.Name = "panel7";
-            panel7.Size = new Size(641, 112);
+            panel7.Size = new Size(544, 84);
             panel7.TabIndex = 29;
             // 
             // Btn_Voltar
@@ -861,9 +844,8 @@
             Btn_Voltar.FlatStyle = FlatStyle.Flat;
             Btn_Voltar.ForeColor = Color.Transparent;
             Btn_Voltar.Location = new Point(0, 0);
-            Btn_Voltar.Margin = new Padding(3, 4, 3, 4);
             Btn_Voltar.Name = "Btn_Voltar";
-            Btn_Voltar.Size = new Size(46, 53);
+            Btn_Voltar.Size = new Size(40, 40);
             Btn_Voltar.TabIndex = 14;
             Btn_Voltar.UseVisualStyleBackColor = false;
             Btn_Voltar.Click += Btn_Voltar_Click;
@@ -872,17 +854,17 @@
             // 
             label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             label1.AutoSize = true;
-            label1.Font = new Font("Microsoft Sans Serif", 21.7499962F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Montserrat SemiBold", 21.7499962F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ImeMode = ImeMode.NoControl;
-            label1.Location = new Point(234, 31);
+            label1.Location = new Point(197, 23);
             label1.Name = "label1";
-            label1.Size = new Size(178, 42);
+            label1.Size = new Size(150, 40);
             label1.TabIndex = 12;
             label1.Text = "Verduras";
             // 
             // Verduras_UC
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             Controls.Add(panel8);
@@ -892,9 +874,8 @@
             Controls.Add(panel5);
             Controls.Add(panel6);
             Controls.Add(panel7);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "Verduras_UC";
-            Size = new Size(641, 824);
+            Size = new Size(544, 618);
             Load += Verduras_UC_Load;
             panel8.ResumeLayout(false);
             panel8.PerformLayout();

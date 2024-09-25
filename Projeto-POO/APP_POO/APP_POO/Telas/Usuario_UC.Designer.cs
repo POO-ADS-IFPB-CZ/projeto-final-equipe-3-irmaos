@@ -40,7 +40,7 @@
             label2 = new Label();
             label5 = new Label();
             Btn_Recarregar = new Button();
-            Btn_EditarNome = new Button();
+            Btn_EditarNome = new Button(); // Mantido da branch Funcionalidades
             panel7.SuspendLayout();
             groupBox1.SuspendLayout();
             SuspendLayout();
@@ -73,7 +73,7 @@
             // 
             label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             label1.AutoSize = true;
-            label1.Font = new Font("Microsoft Sans Serif", 21.7499962F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Montserrat SemiBold", 21.7499962F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ImeMode = ImeMode.NoControl;
             label1.Location = new Point(141, 31);
             label1.Name = "label1";
@@ -89,8 +89,9 @@
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label2);
-            groupBox1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            groupBox1.Location = new Point(61, 173);
+            groupBox1.Font = new Font("Montserrat SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            groupBox1.Location = new Point(53, 130);
+            groupBox1.Margin = new Padding(3, 2, 3, 2);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(454, 184);
             groupBox1.TabIndex = 24;
@@ -100,60 +101,60 @@
             // Label_Saldo
             // 
             Label_Saldo.AutoSize = true;
-            Label_Saldo.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Label_Saldo.Location = new Point(99, 123);
+            Label_Saldo.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold);
+            Label_Saldo.Location = new Point(87, 92);
             Label_Saldo.Name = "Label_Saldo";
-            Label_Saldo.Size = new Size(18, 20);
+            Label_Saldo.Size = new Size(17, 18);
             Label_Saldo.TabIndex = 5;
             Label_Saldo.Text = "0";
             // 
             // Label_DataCadastro
             // 
             Label_DataCadastro.AutoSize = true;
-            Label_DataCadastro.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Label_DataCadastro.Location = new Point(184, 81);
+            Label_DataCadastro.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold);
+            Label_DataCadastro.Location = new Point(161, 61);
             Label_DataCadastro.Name = "Label_DataCadastro";
-            Label_DataCadastro.Size = new Size(53, 20);
+            Label_DataCadastro.Size = new Size(49, 18);
             Label_DataCadastro.TabIndex = 4;
             Label_DataCadastro.Text = "label6";
             // 
             // Label_NomeUsuario
             // 
             Label_NomeUsuario.AutoSize = true;
-            Label_NomeUsuario.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Label_NomeUsuario.Location = new Point(101, 41);
+            Label_NomeUsuario.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold);
+            Label_NomeUsuario.Location = new Point(88, 31);
             Label_NomeUsuario.Name = "Label_NomeUsuario";
-            Label_NomeUsuario.Size = new Size(53, 20);
+            Label_NomeUsuario.Size = new Size(49, 18);
             Label_NomeUsuario.TabIndex = 3;
             Label_NomeUsuario.Text = "label6";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(33, 123);
+            label4.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold);
+            label4.Location = new Point(29, 92);
             label4.Name = "label4";
-            label4.Size = new Size(61, 18);
+            label4.Size = new Size(52, 18);
             label4.TabIndex = 2;
             label4.Text = "Saldo: ";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(33, 81);
+            label3.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold);
+            label3.Location = new Point(29, 61);
             label3.Name = "label3";
-            label3.Size = new Size(150, 18);
+            label3.Size = new Size(133, 18);
             label3.TabIndex = 1;
             label3.Text = "Data de Cadastro: ";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(33, 41);
+            label2.Font = new Font("Montserrat SemiBold", 9.749999F, FontStyle.Bold);
+            label2.Location = new Point(29, 31);
             label2.Name = "label2";
-            label2.Size = new Size(63, 18);
+            label2.Size = new Size(56, 18);
             label2.TabIndex = 0;
             label2.Text = "Nome: ";
             // 
@@ -161,10 +162,10 @@
             // 
             label5.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             label5.AutoSize = true;
-            label5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(72, 451);
+            label5.Font = new Font("Montserrat SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(63, 338);
             label5.Name = "label5";
-            label5.Size = new Size(456, 25);
+            label5.Size = new Size(383, 22);
             label5.TabIndex = 25;
             label5.Text = "Sem crédito na conta? Faça sua recarga aqui:";
             // 
@@ -193,7 +194,7 @@
             Btn_EditarNome.TabIndex = 27;
             Btn_EditarNome.UseVisualStyleBackColor = true;
             Btn_EditarNome.Click += Btn_EditarNome_Click;
-            // 
+
             // Usuario_UC
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -219,14 +220,14 @@
         private Button Btn_Voltar;
         private Label label1;
         private GroupBox groupBox1;
+        private Label Label_Saldo;
+        private Label Label_DataCadastro;
+        private Label Label_NomeUsuario;
         private Label label4;
         private Label label3;
         private Label label2;
         private Label label5;
         private Button Btn_Recarregar;
-        private Label Label_Saldo;
-        private Label Label_DataCadastro;
-        private Label Label_NomeUsuario;
-        private Button Btn_EditarNome;
+        private Button Btn_EditarNome; // Novo botão para editar nome
     }
 }

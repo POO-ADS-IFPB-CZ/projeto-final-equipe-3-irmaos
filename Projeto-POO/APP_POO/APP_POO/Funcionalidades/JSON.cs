@@ -11,6 +11,8 @@ namespace APP_POO.Funcionalidades
         public string? Nome { get; set; }
         public string? Senha { get; set; }
         public int Saldo { get; set; }
+        public string? DataRegistro { get; set; }
     }
 
 }
+
